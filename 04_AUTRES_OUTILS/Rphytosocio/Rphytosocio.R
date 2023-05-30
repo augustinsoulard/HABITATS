@@ -1,3 +1,7 @@
+setwd("\\\\SERVEUR/Etudes/Environnement/Venelles/1276-Inventaires-nat-ZA-Luberon/ETUDE/BOTA/ANALYSE_PHYTO")
+setwd("C:/Users/MTDA-029/Documents/TEMP")
+
+
 library(foreign)
 DATAPHYTO = read.csv(choose.files())
 
@@ -60,11 +64,63 @@ for(i in 1:nrow(DATARELEVE)){
   }
 }
 
-# Une fois un code attribue ? chaque releve, on y joint les informations de baseveg
+# Une fois un code attribu? ? chaque relev?, on y joint les informations de baseveg
 baseveg <- read.csv("baseveg.csv", sep=";")
 DATARELEVE_JOIN = left_join(DATARELEVE,baseveg,by=c("CATMINAT"="CODE..CATMINAT"))
 
-# Enregistrement des resultats
+# On retire les synonymes
+DATARELEVE_JOIN = DATARELEVE_JOIN[!DATARELEVE_JOIN$NIVEAU %in% c("syn =","syn = pp","syn compl inval pp","syn compl pp","syn pp"),]
+
+# On retirer les colonnes inutiles
+DATARELEVE_JOIN = DATARELEVE_JOIN %>% select(RELEVE,CATMINAT,NIVEAU, SYNTAXON)
+
+# Enregistrement des résultats
 dir.create("OUTPUT")
 write.csv(DATARELEVE_JOIN,"OUTPUT/BILAN_RELEVE.csv",fileEncoding = "UTF-8",row.names = F)
+
+# Export de JOIN_DATA
+JOIN_DATA = JOIN_DATA %>% arrange(RELEVE ,code_CATMINAT)
 write.csv(JOIN_DATA,"OUTPUT/BILAN_ESP.csv",fileEncoding = "UTF-8",row.names = F)
+
+################################################################################
+###################CREATION DU FICHIER RMARKDOWN################################
+################################################################################
+if(!require("knitr")){install.packages("knitr")} ; library("knitr")
+if(!require("flextable")){install.packages("flextable")} ; library("flextable")
+
+# Fonction qui enregistre les sorties de R pour 
+con <- file("Analyse_phyto.Rmd", open = "wt", encoding = "UTF-8")
+sink(con,split=T)
+cat("---
+title: \"Analyse phytosociologique\"
+date: \"`r Sys.Date()`\"
+output:
+  word_document: 
+    reference_docx: word_styles_references.dotm
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+``` \n \n")
+LIST_RELEVE = levels(as.factor(DATARELEVE_JOIN$RELEVE))
+for(i in 1:length(LIST_RELEVE)){
+  cat("### Relevé : ",LIST_RELEVE[i],"\n \n")
+  JOIN_DATA[JOIN_DATA$RELEVE==LIST_RELEVE[i],]
+  cat("Tableau des espèces : 
+```{r ",paste0("ESP",LIST_RELEVE[i]),",echo=TRUE}
+flextable(JOIN_DATA[JOIN_DATA$RELEVE==LIST_RELEVE[",i,"],])
+``` 
+\n \n")
+  cat("Tableau des relevés : 
+```{r", paste0("RELEVE",LIST_RELEVE[i]),",echo=TRUE}
+knitr::kable(DATARELEVE_JOIN[DATARELEVE_JOIN$RELEVE==LIST_RELEVE[",i,"],])
+``` 
+\n \n")
+  cat(paste0("![](",DATAPHYTO[DATAPHYTO$RELEVE == LIST_RELEVE[i],]$RP_PHOTO1[1],") \n \n"))
+  
+}
+sink()
+close(con)
+
+#Test knit
+rmarkdown::render("Analyse_phyto.Rmd",output_format = "word_document",output_file = "Analyse_phyto.docx")
+
