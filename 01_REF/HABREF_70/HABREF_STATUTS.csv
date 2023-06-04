@@ -1,0 +1,7 @@
+﻿STATUT;DESCRIPTION;DEFINITION;ORDRE
+A;Absent;Unité non présente dans la zone géographique considérée.;4
+X;Non concerné;La typologie ne concerne pas la zone géographique;5
+U;Inconnu;Unité dont le statut de présence dans la zone géographique reste à définir;6
+D;À confirmer;Unité dont la présence dans la zone géographique considérée est à confirmer.;2
+P;Présent;Unité présente dans la zone géographique considérée.;1
+W;Disparu;Unité disparue dans la zone géographique considérée.;3

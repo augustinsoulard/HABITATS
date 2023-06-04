@@ -1,0 +1,885 @@
+﻿CD_HAB_FIELD;CD_TYPO;LB_HAB_FIELD;FORMAT_HAB_FIELD;DESCRIPT_HAB_FIELD;ORDRE_HAB_FIELD;LENGTH_HAB_FIELD;LB_LABEL;DATE_CREA;DATE_MODIF
+80;22;NIVEAU;NUMBER;Niveau du code CORINE Biotopes correspondant à son nombre de chiffres/lettres, de 1 à 8 (le . marquant la décimale n'est pas pris en compte).;9;22;Niveau;2014-06-19 11:12:45;2023-04-04 12:35:11
+81;22;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;255;Intitulé du niveau;2014-06-19 11:12:45;2023-04-04 12:35:11
+82;22;FRANCE;VARCHAR2;Présence de l'habitat en France.;13;5;Présence en France;2014-06-19 11:12:45;2023-04-04 12:35:11
+83;22;LB_HAB_FR;VARCHAR2;Intitulé de l'habitat selon la version en français de 1997 ou traduction nouvelle dans le cas de codes non retenus dans cette version mais présents en France.;5;255;Nom en français (1997);2014-06-19 11:12:45;2023-04-04 12:35:11
+84;22;LB_HAB_EN;VARCHAR2;Intitulé de l'habitat en anglais selon la version de 1991.;7;255;Nom en anglais (1991);2014-06-19 11:12:45;2023-04-04 12:35:11
+85;22;CRSP_PHYTO_CB91;VARCHAR2;"Correspondances phytosociologiques de l&#39;habitat selon la version de 1991.";21;4000;Correspondances phytosociologiques;2014-06-19 00:00:00;2023-04-04 12:35:11
+86;22;LB_DESCRIPTION;VARCHAR2;"Descriptif de l&#39;habitat en anglais selon la version de 1991.";14;4000;Descriptif officiel;2014-06-19 00:00:00;2023-04-04 12:35:11
+441;45;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+363;26;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+535;78;CD_HAB;NUMBER;"Identifiant unique de l&#39;habitat. Non supprimable, et non réutilisable.";1;8;Identifiant HabRef de l'unité;2016-08-24 00:00:00;2023-04-04 12:35:11
+536;78;FG_VALIDITE;VARCHAR2;"Validité du nom de l&#39;habitat (nom de référence / synonyme).";2;20;Validité;2016-08-24 00:00:00;2023-04-04 12:35:11
+111;26;LB_CODE;VARCHAR2;Code habitat à 3 lettre et à 1 ou 2 chiffres.;4;20;Code;2014-06-19 00:00:00;2023-04-04 12:35:11
+112;26;CD_HAB_SUP;VARCHAR2;Code de l'habitat parent (supérieur);11;20;Identifiant HabRef du parent;2014-06-19 00:00:00;2023-04-04 12:35:11
+113;26;NIVEAU;VARCHAR2;Niveau hiérarchique de l'unité;9;10;Niveau;2014-06-19 00:00:00;2023-04-04 12:35:11
+114;26;CD_HAB_ZNIEFF97;VARCHAR2;Code habitat dans Guillaume (1997);31;20;Code dans Guillaume (1997);2014-06-19 00:00:00;2023-04-04 12:35:11
+115;26;NIVEAU_ZNIEFF97;VARCHAR2;"Niveau de l&#39;habitat dans Guillaume (1997)";32;20;Niveau dans Guillaume (1997);2014-06-19 00:00:00;2023-04-04 12:35:11
+116;26;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;20;Intitulé du niveau;2014-06-19 00:00:00;2023-04-04 12:35:11
+117;26;FRANCE;BOOLEAN;Indication de la présence en France;13;10;Présence en France;2014-06-19 00:00:00;2023-04-04 12:35:11
+118;26;LB_HAB_FR;VARCHAR2;Libellé de l'unité en français;5;100;Libellé;2014-06-19 00:00:00;2023-04-04 12:35:11
+119;26;LB_HAB_EN;VARCHAR2;Libellé en anglais;7;20;Libellé en anglais;2014-06-19 00:00:00;2023-04-04 12:35:11
+120;26;SALINITE;VARCHAR2;Niveau de salinité rencontré dans l'habitat;18;50;Salinité;2014-06-19 00:00:00;2023-04-04 12:35:11
+121;26;EXPOSITION_AUX_VAGUES;VARCHAR2;Type d'exposition aux vagues pour lequel l'habitat est rencontré;21;50;Exposition aux vagues;2014-06-19 00:00:00;2023-04-04 12:35:11
+122;26;COURANT_DE_MAREE;VARCHAR2;Type de courants de marée pour lequel l'habitat est rencontré;22;50;Type de courants de marée;2014-06-19 00:00:00;2023-04-04 12:35:11
+123;26;SUBSTRAT;VARCHAR2;Substrat rencontré dans l'habitat;16;100;Substrat;2014-06-19 00:00:00;2023-04-04 12:35:11
+124;26;GRANULOMETRIE;VARCHAR2;Granulométrie rencontrée dans l'habitat;17;200;Granulométrie;2014-06-19 00:00:00;2023-04-04 12:35:11
+125;26;ETAGEMENT;VARCHAR2;Etage dans lequel se rencontre l'habitat;15;50;Etage;2014-06-19 00:00:00;2023-04-04 12:35:11
+126;26;PROFONDEUR;VARCHAR2;Fourchette de profondeur à laquelle se rencontre l'habitat;20;50;Profondeur;2014-06-19 00:00:00;2023-04-04 12:35:11
+127;26;TEMPERATURE;VARCHAR2;Fourchette de température pour laquelle l'habitat est rencontré;19;50;Température;2014-06-19 00:00:00;2023-04-04 12:35:11
+537;78;CD_TYPO;NUMBER;Identifiant de la typologie.;3;8;Identifiant HabRef de la typologie;2016-08-24 00:00:00;2023-04-04 12:35:11
+538;78;LB_CODE;VARCHAR2;"Code de l&#39;habitat.";4;50;Code de l'habitat;2016-08-24 00:00:00;2023-04-04 12:35:11
+128;26;GEOMORPHOLOGIE_NON_RECIFALE;VARCHAR2;Type géomorphologique selon la typologie non récifale de Salomon 2008 (Salomon J.N., 2008. Géomorphologie sous-marine et littorale. Presses universitaires de Bordeaux);29;200;Géomorphologie de Salomon;2014-06-19 00:00:00;2023-04-04 12:35:11
+129;26;GEOMORPHOLOGIE_RECIFALE;VARCHAR2;"Type géomorphologique selon la typologie récifale d&#39;Andréfouët 2008 (Andréfouët S., Chagnaud N., Chauvin C. & Kranenburg C.J., 2008. Atlas des récifs coralliens de France Outre-Mer. Centre IRD de Nouméa, 153 p.)";30;200;Géomorphologie d'Andréfouët;2014-06-19 00:00:00;2023-04-04 12:35:11
+130;26;GEOMORPHOLOGIE_FINE;VARCHAR2;Type géomorphologique selon la typologie fine de Battistini 1975 (Battistini R. et al., 1975. Eléments de terminologie récifale indopacifique. Téthys, 7 (1) : 1-111, fig 1-77);28;200;Géomorphologie de Battistini;2014-06-19 00:00:00;2023-04-04 12:35:11
+131;26;TROPHISME;VARCHAR2;Information trophique liées à l'habitat;23;20;Trophisme;2014-06-19 00:00:00;2023-04-04 12:35:11
+132;26;LB_DESCRIPTION;VARCHAR2;Eléments descriptifs de l'habitat;14;50;Description;2014-06-19 11:12:45;2023-04-04 12:35:11
+133;26;DISTRIBUTION_GEOGRAPHIQUE;VARCHAR2;Distribution géographique connue de l'habitat;24;50;Distribution géographique;2014-06-19 00:00:00;2023-04-04 12:35:11
+134;26;FLORE_CHAR;VARCHAR2;Information sur la flore caractéristique de l'habitat;25;3000;Flore caractéristique;2014-06-19 00:00:00;2023-04-04 12:35:11
+135;26;FAUNE_CHAR;VARCHAR2;Information sur la faune caractéristique de l'habitat;26;3000;Faune caractéristique;2014-06-19 00:00:00;2023-04-04 12:35:11
+136;26;INFLUENCE_ANTHROPOGENIQUE;VARCHAR2;"Influences potielles des activités humaines sur l&#39;habitat";27;50;Influence anthropogénique;2014-06-19 00:00:00;2023-04-04 12:35:11
+139;7;LB_CODE;VARCHAR2;Code EUNIS de l'unité;4;4;Code EUNIS;2014-06-19 00:00:00;2023-04-04 12:35:11
+140;7;CD_HAB_SUP;VARCHAR2;"Code HabRef parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;8;Identifiant HabRef du parent;2014-06-19 00:00:00;2023-04-04 12:35:11
+141;7;NIVEAU;VARCHAR2;Niveau du code EUNIS correspondant à son nombre de chiffres/lettres, de 1 à 8 (le . marquant la décimale n'est pas pris en compte).;9;1;Niveau;2014-06-19 00:00:00;2023-04-04 12:35:11
+142;7;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;8;Intitulé du niveau;2014-06-19 00:00:00;2023-04-04 12:35:11
+143;7;FRANCE;BOOLEAN;Présence en France de l'habitat. TRUE = présence, FALSE = absence, ? = présence en France à confirmer.;13;5;Présence en France;2014-06-19 00:00:00;2023-04-04 12:35:11
+144;7;LB_HAB_FR;VARCHAR2;"Intitulé en français de l&#39;habitat EUNIS.";5;150;Nom en Français;2014-06-19 00:00:00;2023-04-04 12:35:11
+146;7;LB_DESCRIPTION;VARCHAR2;"Descriptif en anglais de l&#39;habitat EUNIS dans sa version 2012.";14;4000;Descriptif officiel;2014-06-19 00:00:00;2023-04-04 12:35:11
+147;7;LB_HAB_EN;VARCHAR2;"Intitulé en anglais de l'habitat EUNIS. Champ intitulé ""Scientific name"" dans la base EUNIS originelle.";7;255;Nom en anglais;2014-06-19 00:00:00;2023-04-04 12:35:11
+150;7;NOTE;VARCHAR2;"Note additionnelle concernant la description ou la source de l'habitat EUNIS. Champ intitulé ""Owntext"" dans la base EUNIS originelle.";18;600;Remarques;2014-06-19 00:00:00;2023-04-04 12:35:11
+160;5;LB_CODE;VARCHAR2;Code GMRC. Ce code est constitué d'une succession d'un à cinq numéros séparés par des point. Les premiers trois numéros correspondent aux grands types de complexes récifaux, les deux derniers représentent les unités géomorphologiques.;4;16;Code;2014-06-19 11:12:45;2023-04-04 12:35:11
+161;5;CD_HAB_SUP;VARCHAR2;Code de l'habitat parent (supérieur);11;11;Identifiant HabRef du parent;2014-06-19 11:12:45;2023-04-04 12:35:11
+162;5;NIVEAU;NUMBER;Niveau hiérarchique de l'unité;9;22;Niveau;2014-06-19 11:12:45;2023-04-04 12:35:11
+163;5;LB_NIVEAU;VARCHAR2;Intitulé du niveau;10;45;Intitulé du niveau;2014-06-19 11:12:45;2023-04-04 12:35:11
+164;5;FRANCE;VARCHAR2;Indication de la présence en France;13;1;Présence en France;2014-06-19 11:12:45;2023-04-04 12:35:11
+167;5;CD_GMRC_FINAL;VARCHAR2;Code GMRC final, dit de niveau 5, procuré par la combinaison, unique, d’informations des niveaux 1 à 4. Ce code s'applique uniquement aux codes de niveau 4.;15;4;Code GMRC final;2014-06-19 11:12:45;2023-04-04 12:35:11
+169;70;LB_CODE;VARCHAR2;Code de l'habitat : A puis 1 ou 2 chiffres, suivis au maximum de 6 décimales.;4;10;Code Antilles;2014-06-19 11:12:45;2023-04-04 12:35:11
+170;70;CD_HAB_SUP;VARCHAR2;"Code HabRef de l'habitat parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;9;Identifiant HabRef du parent;2014-06-19 11:12:45;2023-04-04 12:35:11
+171;70;NIVEAU;VARCHAR2;Niveau de l'habitat correspondant à son nombre de chiffres / lettres, de 1 à 8 (le préfixe A et le . marquant la décimale ne sont pas pris en compte).;9;1;Niveau;2014-06-19 11:12:45;2023-04-04 12:35:11
+174;70;LB_HAB_FR;VARCHAR2;Intitulé français de l'habitat.;5;200;Nom français;2014-06-19 11:12:45;2023-04-04 12:35:11
+175;70;LB_HAB_EN;VARCHAR2;Intitulé anglais de l'habitat. Champ créé par souci d'homogénéité avec les autres bases de données habitats, mais non renseigné.;7;200;Nom anglais;2014-06-19 11:12:45;2023-04-04 12:35:11
+177;71;LB_CODE;VARCHAR2;Code de l'habitat;4;10;Code Guyane;2014-06-19 11:12:45;2023-04-04 12:35:11
+178;71;CD_HAB_SUP;VARCHAR2;"Code HabRef de l'habitat parent (niveau n+1) du code Habref présent dans le champ ""CD_HAB"".";11;9;Identifiant HabRef du parent;2014-06-19 11:12:45;2023-04-04 12:35:11
+179;71;NIVEAU;VARCHAR2;Niveau de l'habitat correspondant à son nombre de chiffres / lettres, de 1 à 8 (le préfixe G et le . marquant la décimale ne sont pas pris en compte).;9;1;Niveau;2014-06-19 11:12:45;2023-04-04 12:35:11
+180;71;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;10;Intitulé du niveau;2014-06-19 11:12:45;2023-04-04 12:35:11
+473;28;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+182;71;LB_HAB_FR;VARCHAR2;Intitulé français de l'habitat.;5;200;Nom français;2014-06-19 11:12:45;2023-04-04 12:35:11
+183;71;LB_HAB_EN;VARCHAR2;Intitulé anglais de l'habitat. Champ créé par souci d'homogénéité avec les autres bases de données habitats, mais non renseigné.;7;200;Nom anglais;2014-06-19 11:12:45;2023-04-04 12:35:11
+185;72;LB_CODE;VARCHAR2;Code de l'habitat;4;9;Code Réunion;2014-06-19 11:12:45;2023-04-04 12:35:12
+186;72;CD_HAB_SUP;VARCHAR2;"Code HabRef de l'habitat parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;8;Identifiant HabRef du parent;2014-06-19 11:12:45;2023-04-04 12:35:12
+187;72;NIVEAU;VARCHAR2;Niveau de l'habitat.;9;1;Niveau;2014-06-19 11:12:45;2023-04-04 12:35:12
+188;72;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;8;Intitulé du niveau;2014-06-19 11:12:45;2023-04-04 12:35:12
+370;7;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+190;72;LB_HAB_FR;VARCHAR2;Intitulé français de l'habitat.;5;200;Nom français;2014-06-19 11:12:45;2023-04-04 12:35:12
+191;72;LB_HAB_EN;VARCHAR2;Intitulé anglais de l'habitat. Champ créé par souci d'homogénéité avec les autres bases de données habitats, mais non renseigné.;7;200;Nom anglais;2014-06-19 11:12:45;2023-04-04 12:35:12
+193;46;LB_CODE;VARCHAR2;Code de l'unité. Le niveau 1 est identifié par une lettre : M pour les habitats des substrats meubles, R pour les habitats des substrats rocheux et P pour les habitats particuliers. Les niveaux 2 à 7 sont identifiés par des chiffres séparés par des points.;4;18;Code;2014-06-19 11:12:45;2023-04-04 12:35:11
+194;46;CD_HAB_SUP;VARCHAR2;Code de l'habitat parent (supérieur);11;15;Identifiant HabRef du parent;2014-06-19 11:12:45;2023-04-04 12:35:11
+195;46;NIVEAU;VARCHAR2;Niveau hiérarchique de l'unité;9;1;Niveau;2014-06-19 11:12:45;2023-04-04 12:35:11
+196;46;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;8;Intitulé du niveau;2014-06-19 11:12:45;2023-04-04 12:35:11
+197;46;LB_HAB_FR;VARCHAR2;Libellé de l'unité en français;5;180;Libellé;2014-06-19 11:12:45;2023-04-04 12:35:11
+469;28;LB_DESCRIPTION;VARCHAR2;"Copie de la rubrique ""Synécologie"" de la fiche descriptive de l&#39;association comme publiée dans la synthèse de classe.";14;4000;Synécologie;2014-06-19 00:00:00;2023-04-04 12:35:11
+200;46;FRANCE;VARCHAR2;Indication de la présence en France;13;5;Présence en France;2014-06-19 11:12:45;2023-04-04 12:35:11
+202;8;CD_HAB_SUP;VARCHAR2;Identifiant HabRef de l'habitat parent.;11;4;Identifiant HabRef du parent;2014-06-19 11:12:45;2023-04-04 12:35:11
+203;8;LB_HAB_EN;VARCHAR2;Intitulé en anglais de l'habitat.;7;5;Nom anglais;2014-06-19 11:12:45;2023-04-04 12:35:11
+207;8;LB_HAB_DH_FR;VARCHAR2;"Intitulé en français de l'habitat selon l'annexe I de la directive ""Habitats"" (révisée par la directive 2013/17/UE), après éventuelle correction.";17;200;Nom français corrigé (DH);2014-06-19 00:00:00;2023-04-04 12:35:11
+208;8;LB_HAB_DH_EN;VARCHAR2;"Intitulé en anglais de l'habitat selon l'annexe I de la directive ""Habitats"" (révisée par la directive 2013/17/UE), après éventuelle correction.";18;200;Nom anglais (DH);2014-06-19 00:00:00;2023-04-04 12:35:11
+211;8;CRSP_PAL;VARCHAR2;Correspondances entre l'habitat (niveau 3) et la classification des habitats du Paléarctique (version 1995, sauf précision contraire) selon le manuel d'interprétation (version EUR 28).;24;150;Correspondances avec la classification du Paléarctique;2014-06-19 00:00:00;2023-04-04 12:35:11
+539;78;LB_HAB_FR;VARCHAR2;"Intitulé français de l&#39;habitat.";5;500;Nom français;2016-08-24 00:00:00;2023-04-04 12:35:11
+627;79;COND_STATIONNELLES;VARCHAR2;Description des conditions stationnelles (principalement les types de sols) dans lesquelles se développent les types forestiers.;17;;Conditions stationnelles;2016-11-14 00:00:00;2023-04-04 12:35:11
+628;79;STRUC_PHYSIO_FORET;VARCHAR2;Informations sur la structure et la physionomie des types forestiers.;18;;Structure et physionomie forestière;2016-11-14 00:00:00;2023-04-04 12:35:11
+629;79;COMP_TAXONOMIQUE;VARCHAR2;Informations sur la composition taxonomique (essences forestières, flore du sous-bois et grande faune).;19;;Composition taxonomique;2016-11-14 00:00:00;2023-04-04 12:35:11
+630;79;ENJEUX_BIODIVERSITE;VARCHAR2;Evaluation des enjeux concernant la biodiversité (basée sur le calcul de la diversité alpha et bêta).;20;;Enjeux de biodiversité;2016-11-14 00:00:00;2023-04-04 12:35:11
+1;6;LB_CODE;VARCHAR2;Code de l'unité. Le niveau 1 est identifié par un chiffre romain et les autres niveaux par un chiffre arabe séparés par des points.;4;255;Code;2014-06-19 00:00:00;2023-04-04 12:35:11
+2;6;CD_HAB_SUP;VARCHAR2;Code de l'habitat parent (supérieur);11;255;Identifiant HabRef du parent;2014-06-19 00:00:00;2023-04-04 12:35:11
+3;6;LB_NIVEAU;VARCHAR2;Niveau de l'habitat. Niveau 1 : Etage. Niveau 2 : Substrat. Niveau 3 : Biocénose. Niveau 4 : Association, Faciès, Enclave, Morpho-structure.;10;255;Intitulé du niveau;2014-06-19 00:00:00;2023-04-04 12:35:11
+4;6;NIVEAU;NUMBER;Niveau hiérarchique de l'unité;9;22;Niveau;2014-06-19 00:00:00;2023-04-04 12:35:11
+5;6;LB_HAB_FR;VARCHAR2;Libellé de l'unité en français;5;255;Libellé;2014-06-19 00:00:00;2023-04-04 12:35:11
+7;6;LOC;VARCHAR2;Localisation de l'habitat;16;4000;Localisation;2014-06-19 00:00:00;2023-04-04 12:35:11
+8;6;ETAGE;VARCHAR2;Le ou les étages dans le ou lesquels l'habitat peut se rencontrer;17;255;Etage;2014-06-19 00:00:00;2023-04-04 12:35:11
+9;6;SUBSTRAT;VARCHAR2;Nature du substrat de l'habitat;18;255;Substrat;2014-06-19 00:00:00;2023-04-04 12:35:11
+10;6;BATHY;VARCHAR2;Répartition bathymétrique de l'habitat;19;255;Répartition bathymétrique;2014-06-19 00:00:00;2023-04-04 12:35:11
+11;6;SITUATION;VARCHAR2;Situation de l'habitat;20;255;Situation;2014-06-19 00:00:00;2023-04-04 12:35:11
+12;6;HYDRO;VARCHAR2;Conditions hydrodynamiques dans lesquelles l'habitat peut se rencontrer;21;255;Hydrodynamisme;2014-06-19 00:00:00;2023-04-04 12:35:11
+13;6;SALINITE;VARCHAR2;Salinité pour laquelle l'habitat peut se rencontrer;22;255;Salinité;2014-06-19 00:00:00;2023-04-04 12:35:11
+14;6;TEMPERATURE;VARCHAR2;Température pour laquelle l'habitat peut se rencontrer;23;255;Température;2014-06-19 00:00:00;2023-04-04 12:35:11
+15;6;LB_DESCRIPTION;VARCHAR2;Description de l'habitat;14;4000;Description;2014-06-19 00:00:00;2023-04-04 12:35:11
+16;6;CRITERES;VARCHAR2;Principaux critères de reconnaissance de l'habitat;24;4000;Principaux critères de reconnaissance;2014-06-19 00:00:00;2023-04-04 12:35:11
+17;6;ESPECES;VARCHAR2;Espèces caractéristiques/indicatrices de l'habitat;25;4000;Espèces caractéristiques/indicatrices;2014-06-19 00:00:00;2023-04-04 12:35:11
+18;6;HAB_ASSOC;VARCHAR2;Habitats associés ou en contact;26;4000;Habitats associés ou en contact;2014-06-19 00:00:00;2023-04-04 12:35:11
+19;6;CONFUSIONS;VARCHAR2;Confusions possibles avec d'autres habitats;27;4000;Confusions possibles;2014-06-19 00:00:00;2023-04-04 12:35:11
+20;6;INTERET;VARCHAR2;Intérêt de l'habitat pour la conservation;28;4000;Intérêt pour la conservation;2014-06-19 00:00:00;2023-04-04 12:35:11
+21;6;TENDANCES_MENACES;VARCHAR2;Tendances évolutives et les menaces potentielles de l'habitat;29;4000;Tendances et menaces;2014-06-19 00:00:00;2023-04-04 12:35:11
+22;6;GESTION;VARCHAR2;Gestion et statut de conservation de l'habitat;30;4000;Gestion et statut de conservation;2014-06-19 00:00:00;2023-04-04 12:35:11
+23;6;FACIES_ASSOCIATION;VARCHAR2;Faciès et associations de l'habitat;31;4000;Faciès et associations;2014-06-19 00:00:00;2023-04-04 12:35:11
+24;6;FRANCE;VARCHAR2;Indication de la présence en France;13;255;Présence en France;2014-06-19 00:00:00;2023-04-04 12:35:11
+25;6;REDACTEURS;VARCHAR2;Auteurs de la fiche de l'habitat;32;255;Auteurs de la fiche;2014-06-19 00:00:00;2023-04-04 12:35:11
+27;32;LB_CODE;VARCHAR2;Code de l'unité. Le niveau 1 est identifié par un chiffre romain, les niveaux 2 et 3 par un chiffre arabe et le niveau 4 par une lettre minuscule. Ils sont séparés par des points.;4;20;Code;2014-06-19 00:00:00;2023-04-04 12:35:11
+28;32;CD_HAB_SUP;VARCHAR2;Code de l'habitat parent (supérieur);11;20;Identifiant HabRef du parent;2014-06-19 00:00:00;2023-04-04 12:35:11
+29;32;NIVEAU;NUMBER;Niveau hiérarchique de l'unité;9;22;Niveau;2014-06-19 00:00:00;2023-04-04 12:35:11
+30;32;LB_NIVEAU;VARCHAR2;Niveau de l'habitat. Niveau 1 : Etage. Niveau 2 : Substrat. Niveau 3 : Biocénose. Niveau 4 : Association, Faciès, Enclave, Morpho-structure.;10;30;Intitulé du niveau;2014-06-19 00:00:00;2023-04-04 12:35:11
+31;32;LB_HAB_FR;VARCHAR2;Libellé de l'unité en français;5;250;Libellé;2014-06-19 00:00:00;2023-04-04 12:35:11
+32;32;FRANCE;VARCHAR2;Indication de la présence en France;13;10;Présence en France;2014-06-19 00:00:00;2023-04-04 12:35:11
+35;3;LB_CODE;VARCHAR2;Code du syntaxon.;4;16;Code du syntaxon;2014-06-19 00:00:00;2023-04-04 12:35:11
+36;3;CD_HAB_SUP;VARCHAR2;Identifiant HabRef du syntaxon parent.;11;16;Identifiant HabRef du parent;2014-06-19 00:00:00;2023-04-04 12:35:11
+37;3;NIVEAU;NUMBER;Niveau du syntaxon dans la classification phytosociologique, codé de 1 à 8.;9;22;Niveau;2014-06-19 00:00:00;2023-04-04 12:35:11
+38;3;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;21;Intitulé du niveau;2014-06-19 00:00:00;2023-04-04 12:35:11
+39;3;FRANCE;VARCHAR2;Présence du syntaxon en France.;13;5;Présence en France;2014-06-19 00:00:00;2023-04-04 12:35:11
+40;3;LB_HAB_FR;VARCHAR2;Nom latin du syntaxon;5;255;Nom latin;2014-06-19 00:00:00;2023-04-04 12:35:11
+44;3;LB_HAB_FR_COMPLET;VARCHAR2;Nom complet du syntaxon, résultant de la concaténation du nom latin et des auteurs.;6;255;Nom complet;2014-06-19 00:00:00;2023-04-04 12:35:11
+45;3;LB_AUTEUR;VARCHAR2;Auteurs du syntaxon.;8;255;Auteurs;2014-06-19 00:00:00;2023-04-04 12:35:11
+1073;8;INTERP_FR;VARCHAR2;"Définition de l’habitat selon l’interprétation française (détails et synthèse des critères d’identification de l&#39;habitat).";20;;Interprétation française;2022-03-10 00:00:00;2023-04-04 12:35:11
+1074;8;PRECISIONS;VARCHAR2;"Précisions de l&#39;interprétation française (critères d’identification, détails des possibles superpositions entre HIC et critères de distinction avec d’autres HIC, références aux définitions des autres Etats Membres, spécificités
+nationales).";21;;Précisions de l'interprétation française;2022-03-10 00:00:00;2023-04-04 12:35:11
+1075;8;LB_HAB_FR_ALTER;VARCHAR2;Appellation française alternative de l’habitat (lorsque l’intitulé officiel français de l’habitat n’est pas assez explicite).;16;;Appellation française alternative;2022-03-10 00:00:00;2023-04-04 12:35:11
+1076;108;CD_HAB;NUMBER;"Identifiant unique de l&#39;habitat. Non supprimable, et non réutilisable.";1;8;Identifiant HabRef de l'unité;2022-03-11 00:00:00;2023-04-04 12:35:11
+1077;108;FG_VALIDITE;VARCHAR2;"Validité du nom de l&#39;habitat (nom de référence / synonyme)";2;20;Validité;2022-03-11 00:00:00;2023-04-04 12:35:11
+46;3;LB_DESCRIPTION;VARCHAR2;Diagnose du syntaxon.;14;4000;Description;2014-06-19 00:00:00;2023-04-04 12:35:11
+507;28;NOM_SYNTAXON;VARCHAR2;"Copie de la rubrique ""Association"" de la fiche descriptive de l&#39;association comme publiée dans la synthèse de classe.";16;1500;Nom cité du syntaxon;2015-09-15 00:00:00;2023-04-04 12:35:11
+48;3;REMARQUES;VARCHAR2;Remarques sur le syntaxon.;17;4000;Remarques;2014-06-19 00:00:00;2023-04-04 12:35:11
+50;4;CARACTERES_GENERAUX;VARCHAR2;Caractères généraux (uniquement pour les habitats génériques).;39;4000;Caractères généraux;2014-06-19 00:00:00;2023-04-04 12:35:12
+51;4;HD;VARCHAR2;Déclinaison de l'habitat générique en habitats élémentaires.;40;4000;Déclinaison en habitats élémentaires;2014-06-19 00:00:00;2023-04-04 12:35:12
+52;4;LB_CODE;VARCHAR2;Code de l'habitat.;4;18;Code de l'habitat;2014-06-19 00:00:00;2023-04-04 12:35:12
+53;4;CD_HAB_SUP;VARCHAR2;Identifiant HabRef de l'habitat parent.;11;18;Identifiant HabRef du parent;2014-06-19 00:00:00;2023-04-04 12:35:12
+54;4;NIVEAU;VARCHAR2;Niveau de l'habitat.;9;2;Niveau;2014-06-19 00:00:00;2023-04-04 12:35:12
+55;4;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;255;Intitulé du niveau;2014-06-19 00:00:00;2023-04-04 12:35:12
+56;4;FRANCE;VARCHAR2;Présence en France de l'habitat.;13;5;Présence en France;2014-06-19 00:00:00;2023-04-04 12:35:12
+57;4;LB_HAB_FR;VARCHAR2;Intitulé de l'habitat selon les Cahiers d'habitats.;5;255;Nom en français;2014-06-19 00:00:00;2023-04-04 12:35:12
+508;28;SYNONYMES;VARCHAR2;"Copie de la rubrique ""Synonymes"" de la fiche descriptive de l&#39;association comme publiée dans la synthèse de classe.";17;;Synonymes;2015-09-15 00:00:00;2023-04-04 12:35:11
+65;4;CARAC_DIAG_CARC_STAT;VARCHAR2;Caractères diagnostiques de l’habitat - Caractéristiques stationnelles.;21;4000;Caractéristiques stationnelles;2014-06-19 00:00:00;2023-04-04 12:35:12
+66;4;CARAC_DIAG_VAR;VARCHAR2;Caractères diagnostiques de l’habitat - Variabilité.;22;4000;Variabilité;2014-06-19 00:00:00;2023-04-04 12:35:12
+67;4;CARAC_DIAG_ESP;VARCHAR2;"Caractères diagnostiques de l’habitat - Espèces ""indicatrices"" du type d’habitat.";24;4000;"Espèces ""indicatrices""";2014-06-19 00:00:00;2023-04-04 12:35:12
+68;4;CARAC_DIAG_CONF;VARCHAR2;Caractères diagnostiques de l’habitat - Confusions possibles avec d’autres habitats.;25;4000;Confusions possibles;2014-06-19 00:00:00;2023-04-04 12:35:12
+69;4;CRSP;VARCHAR2;Correspondances biocénotiques ou phytosociologiques.;26;4000;Correspondances;2014-06-19 00:00:00;2023-04-04 12:35:12
+70;4;DYNAMIQUE;VARCHAR2;Dynamique du peuplement ou de la végétation.;27;4000;Dynamique;2014-06-19 00:00:00;2023-04-04 12:35:12
+71;4;HAB_ASSOC;VARCHAR2;Habitats associés ou en contact.;28;4000;Habitats associés ou en contact;2014-06-19 00:00:00;2023-04-04 12:35:12
+72;4;REPARTITION_GEO;VARCHAR2;Répartition géographique.;29;4000;Répartition géographique;2014-06-19 00:00:00;2023-04-04 12:35:12
+73;4;VALEUR;VARCHAR2;Valeur écologique et biologique.;30;4000;Valeur écologique et biologique;2014-06-19 00:00:00;2023-04-04 12:35:12
+74;4;TENDANCES;VARCHAR2;Tendances évolutives et menaces potentielles.;32;4000;Tendances et menaces;2014-06-19 00:00:00;2023-04-04 12:35:12
+75;4;POTENTIALITES;VARCHAR2;Potentialités intrinsèques de production.;33;4000;Potentialités intrinsèques de production;2014-06-19 00:00:00;2023-04-04 12:35:12
+76;4;GESTION_RECOM;VARCHAR2;Cadre de gestion - Modes de gestion recommandés.;35;;Modes de gestion recommandés;2014-06-19 00:00:00;2023-04-04 12:35:12
+77;4;RECHERCHE;VARCHAR2;Inventaires, expérimentations, axes de recherche à développer.;38;4000;Axes de recherche;2014-06-19 00:00:00;2023-04-04 12:35:12
+78;22;LB_CODE;VARCHAR2;Code CORINE Biotopes, à 1 ou 2 chiffres suivis au maximum de 6 décimales.;4;9;Code CORINE Biotopes;2014-06-19 11:12:45;2023-04-04 12:35:11
+79;22;CD_HAB_SUP;VARCHAR2;"Code HabRef parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;8;Identifiant HabRef du parent;2014-06-19 11:12:45;2023-04-04 12:35:11
+509;28;TYPE_NOMENCLATURAL;VARCHAR2;"Copie de la rubrique ""Type nomenclatural"" de la fiche descriptive de l&#39;association comme publiée dans la synthèse de classe.";18;;Type nomenclatural;2015-09-15 00:00:00;2023-04-04 12:35:11
+510;28;COMBINAISON_ESPECES;VARCHAR2;"Copie de la rubrique ""Combinaison caractéristique d&#39;espèces"" de la fiche descriptive de l&#39;association, comme publiée dans la synthèse de classe. Liste des espèces de la combinaison caractéristique.";20;4000;Combinaison caractéristique d'espèces;2015-09-15 00:00:00;2023-04-04 12:35:11
+511;28;PHYSIONOMIE;VARCHAR2;"Copie de la rubrique ""Association"" de la fiche descriptive de l&#39;association comme publiée dans la synthèse de classe. Texte libre, précisant notamment les espèces dominantes et fréquentes.";19;;Physionomie;2015-09-15 00:00:00;2023-04-04 12:35:11
+512;28;VARIATIONS;VARCHAR2;"Copie de la rubrique ""Variations"" de la fiche descriptive de l&#39;association comme publiée dans la synthèse de classe. Informations relatives aux sous-associations (ou variantes).";21;;Variations;2015-09-15 00:00:00;2023-04-04 12:35:11
+513;28;SYNCHOROLOGIE;VARCHAR2;"Copie de la rubrique ""Synchrologie"" de la fiche descriptive de l&#39;association comme publiée dans la synthèse de classe. Distribution générale de l&#39;association et description des formes territoriales et des races. Précision éventuelle de l&#39;existence de cartes de répartition (totales ou partielles).";23;;Synchorologie;2015-09-15 00:00:00;2023-04-04 12:35:11
+514;28;AXE_A_DEVELOPPER;VARCHAR2;"Copie de la rubrique ""Axes à développer"" de la fiche descriptive de l&#39;association comme publiée dans la synthèse de classe.";24;;Axes à développer;2015-09-15 00:00:00;2023-04-04 12:35:11
+515;28;BIBLIOGRAPHIE;VARCHAR2;"Copie de la rubrique ""Bibliographie"" de la fiche descriptive de l&#39;association comme publiée dans la synthèse de classe.";26;;Bibliographie;2015-09-15 00:00:00;2023-04-04 12:35:11
+166;5;LB_HAB_EN;VARCHAR2;Intitulé anglais du grand type de complexes récifaux ou de l'unité géomorphologique;7;255;Libellé en anglais;2014-06-19 11:12:45;2023-04-04 12:35:11
+165;5;LB_HAB_FR;VARCHAR2;Intitulé français du grand type de complexes récifaux ou de l'unité géomorphologique (disponible pour les types/unités présents en France);5;255;Libellé;2014-06-19 11:12:45;2023-04-04 12:35:11
+172;70;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;10;Intitulé du niveau;2014-06-19 11:12:45;2023-04-04 12:35:11
+440;45;CD_TYPO;NUMBER;Identifiant de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+447;16;CD_TYPO;NUMBER;Identifiant de la typologie.;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+241;16;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;8;Intitulé du niveau;2014-06-19 11:12:46;2023-04-04 12:35:11
+455;35;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+460;17;CD_TYPO;NUMBER;Identifiant de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+466;18;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+341;4;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:12
+395;70;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+456;35;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+369;7;CD_TYPO;NUMBER;Identifiant HabRef de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+408;72;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:12
+425;8;FRANCE;VARCHAR2;Présence en France de l'habitat.;13;5;Présence en France;2014-06-19 13:23:53;2023-04-04 12:35:11
+307;28;LB_HAB_FR_COMPLET;VARCHAR2;"Libellé complet du syntaxon, qui est une concaténation des champs ""LB_HAB_FR"" et ""LB_AUTEURS"".";6;255;Nom complet;2014-06-19 00:00:00;2023-04-04 12:35:11
+492;7;DESCRIPTIF_FR_2012;VARCHAR2;"Descriptif en français de l&#39;habitat EUNIS dans sa version 2012.";15;4000;Descriptif en français;2015-04-30 00:00:00;2023-04-04 12:35:11
+549;79;CD_HAB;NUMBER;"Identifiant unique de l&#39;habitat. Non supprimable, et non réutilisable.";1;8;Identifiant HabRef de l'unité;2016-08-24 00:00:00;2023-04-04 12:35:11
+491;22;DESCRIPTIF_CB97_FR;VARCHAR2;"Descriptif de l&#39;habitat selon la version en français de 1997 ou traduction nouvelle dans le cas de codes non retenus dans cette version mais présents en France.";15;4000;Description en français;2014-12-11 00:00:00;2023-04-04 12:35:11
+550;79;FG_VALIDITE;VARCHAR2;"Validité du nom de l&#39;habitat (nom de référence / synonyme).";2;20;Validité;2016-08-24 00:00:00;2023-04-04 12:35:11
+551;79;CD_TYPO;NUMBER;Identifiant de la typologie;3;8;Identifiant HabRef de la typologie;2016-08-24 00:00:00;2023-04-04 12:35:11
+552;79;LB_CODE;VARCHAR2;"Code de l&#39;habitat : 41 (ou 4 pour le premier niveau hiérarchique), suivit d&#39;une ou deux décimales (une décimale = habitat générique ; deux décimales = habitat principal). L&#39;ajout d&#39;une lettre après les deux décimales transforme les habitats principaux en habitats particuliers.
+Note : un habitat n&#39;a qu&#39;une seule décimale suivit d&#39;une lettre : 41.2b (habitat particulier).";4;50;Code forêts Guyane;2016-08-24 00:00:00;2023-04-04 12:35:11
+553;79;LB_HAB_FR;VARCHAR2;"Intitulé français de l&#39;habitat.";5;500;Nom français;2016-08-24 00:00:00;2023-04-04 12:35:11
+554;79;LB_HAB_FR_COMPLET;VARCHAR2;"Libellé français / latin avec auteur. Champ créé par souci d&#39;homogénéité avec les autres bases de données habitats, mais non renseigné.";6;500;Nom complet;2016-08-24 00:00:00;2023-04-04 12:35:11
+555;79;LB_HAB_EN;VARCHAR2;"Intitulé anglais de l&#39;habitat. Champ créé par souci d&#39;homogénéité avec les autres bases de données habitats, mais non renseigné.";7;500;Nom anglais;2016-08-24 00:00:00;2023-04-04 12:35:11
+556;79;LB_AUTEUR;VARCHAR2;"Auteurs. Champ présent pour un soucis d&#39;homogénité des tables mais non rempli.";8;255;Auteurs;2016-08-24 00:00:00;2023-04-04 12:35:11
+557;79;NIVEAU;NUMBER;"Niveau de l&#39;habitat correspondant à son nombre de chiffres / lettres, de 1 à 5 (le . marquant la décimale n&#39;est pas pris en compte).";9;8;Niveau;2016-08-24 00:00:00;2023-04-04 12:35:11
+558;79;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;100;Intitulé du niveau;2016-08-24 00:00:00;2023-04-04 12:35:11
+559;79;CD_HAB_SUP;NUMBER;"Code HabRef de l&#39;habitat parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;8;Identifiant HabRef du parent;2016-08-24 00:00:00;2023-04-04 12:35:11
+560;79;PATH_CD_HAB;VARCHAR2;"Chemin de l&#39;arborescence pour atteindre ce code.";12;4000;Arborescence;2016-08-24 00:00:00;2023-04-04 12:35:11
+561;79;FRANCE;VARCHAR2;"Présence en France (Métropole + territoires d&#39;outre-mer).";13;5;Présence en France;2016-08-24 00:00:00;2023-04-04 12:35:11
+562;79;LB_DESCRIPTION;VARCHAR2;Description des grands traits des types forestiers et de leur situation dans le paysage.;14;4000;Description et situation dans le paysage;2016-08-24 00:00:00;2023-04-04 12:35:11
+1081;108;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2022-03-11 10:13:10;2023-04-04 12:35:11
+1078;108;CD_TYPO;NUMBER;Identifiant de la typologie;3;8;Identifiant HabRef de la typologie;2022-03-11 00:00:00;2023-04-04 12:35:11
+1079;108;LB_CODE;VARCHAR2;"Code de l&#39;unité. Le niveau 1 est identifié par une lettre : A pour les habitats du supralittoral, B pour les habitats du médiolittoral, C pour les habitats de l&#39;infralittoral, D pour les habitats du circalittoral, E pour bathyal et F pour abyssal. Les niveaux 2 à 4 correspondant au substrat, à la géomorphologie ou au type de substrat meuble et au(x) peuplement(s) dominant(s), sont identifiés par des chiffres. Le dernier niveau représentant l&#39;habitat est précédé d&#39;un point et identifié par un chiffre.";4;50;Code;2022-03-11 00:00:00;2023-04-04 12:35:11
+1080;108;LB_HAB_FR;VARCHAR2;"Libellé de l&#39;unité en français";5;500;Libellé;2022-03-11 00:00:00;2023-04-04 12:35:11
+1082;108;LB_HAB_EN;VARCHAR2;;7;500;;2022-03-11 10:13:11;2023-04-04 12:35:11
+1083;108;LB_AUTEUR;VARCHAR2;;8;255;;2022-03-11 10:13:11;2023-04-04 12:35:11
+1084;108;NIVEAU;NUMBER;"Niveau hiérarchique de l&#39;unité";9;8;Niveau;2022-03-11 00:00:00;2023-04-04 12:35:11
+631;79;ENJEUX_PROD_BOIS;VARCHAR2;Evaluation des enjeux concernant la production de bois (basée sur le calcul de la densité moyenne en Essences Commerciales Majeures).;21;;Enjeux de production de bois;2016-11-14 00:00:00;2023-04-04 12:35:11
+632;79;ENJEUX_BIOM_CARB;VARCHAR2;Evaluation des enjeux concernant la biomasse forestière vivante et le captage de carbone.;22;;Enjeux biomasse et carbone;2016-11-14 00:00:00;2023-04-04 12:35:11
+633;79;ENJEUX_PROT_SOLS_PAYSAGES;VARCHAR2;"Evaluation des enjeux concernant la protection des sols et des paysages (basée sur les contraintes liées à la pente et à l&#39;hydromorphie).";23;;Enjeux de protection des sols et des paysages;2016-11-14 00:00:00;2023-04-04 12:35:11
+635;79;FREQUENCE;VARCHAR2;"Indication de la fréquence de l&#39;habitat en Guyane (exprimée en pourcentage du territoire guyanais).";26;;Fréquence du type forestier;2016-11-14 00:00:00;2023-04-04 12:35:11
+563;80;CD_HAB;NUMBER;"Identifiant unique de l&#39;habitat. Non supprimable, et non réutilisable.";1;8;Identifiant HabRef de l'unité;2016-08-24 00:00:00;2023-04-04 12:35:11
+639;80;CD_HAB_SUP;;"Code HabRef de l&#39;habitat parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;;Identifiant HabRef du parent;2016-11-16 18:08:26;2023-04-04 12:35:11
+640;80;CD_TYPO;;Identifiant de la typologie.;3;;Identifiant HabRef de la typologie;2016-11-16 18:08:59;2023-04-04 12:35:11
+641;80;FG_VALIDITE;;"Validité du nom de l&#39;habitat (nom de référence / synonyme).";2;;Validité;2016-11-16 18:09:37;2023-04-04 12:35:11
+642;80;FRANCE;;Présence en FRANCE (Metropole + DOM TOM + COM).;13;;Présence en France;2016-11-16 18:10:09;2023-04-04 12:35:11
+643;80;LB_AUTEUR;;"Auteurs. Champ présent pour un soucis d&#39;homogénéité des tables mais non rempli.";8;;Auteurs;2016-11-16 18:11:02;2023-04-04 12:35:11
+644;80;LB_CODE;;"Code de l&#39;habitat : A puis ""."" (point) puis 1 à 4 chiffres séparés par des ""-"" (tirets) selon le niveau hiérarchique.";4;;Code végétation Antilles;2016-11-16 00:00:00;2023-04-04 12:35:11
+645;80;LB_DESCRIPTION;;Texte de description des végétations.;14;;Description;2016-11-16 18:13:56;2023-04-04 12:35:11
+646;80;LB_HAB_EN;;"Intitulé anglais de l&#39;habitat. Champ créé par souci d&#39;homogénéité avec les autres bases de données habitats, mais non renseigné.";7;;Nom anglais;2016-11-16 18:14:26;2023-04-04 12:35:11
+647;80;LB_HAB_FR;;"Intitulé français de l&#39;habitat.";5;;Nom français;2016-11-16 18:15:16;2023-04-04 12:35:11
+648;80;LB_HAB_FR_COMPLET;;Libellé français / latin avec auteur.;6;;Nom complet;2016-11-16 18:15:45;2023-04-04 12:35:11
+649;80;LB_NIVEAU;;Intitulé du niveau.;10;;Intitulé du niveau;2016-11-16 18:16:14;2023-04-04 12:35:11
+650;80;NIVEAU;;"Niveau de l&#39;habitat correspondant à son nombre de chiffres / lettres, de 1 à 5 (le ""."" (point) marquant la décimale n&#39;est pas pris en compte).";9;;Niveau;2016-11-16 18:16:42;2023-04-04 12:35:11
+651;80;PATH_CD_HAB;;"Chemin de l&#39;arborescence pour atteindre ce code.";12;;Arborescence;2016-11-16 18:17:09;2023-04-04 12:35:11
+652;80;EVOLUTION;VARCHAR2;Evolutions possibles des postes typologiques.;15;;Evolution;2016-11-16 18:17:38;2023-04-04 12:35:11
+653;80;TEMP_ANN_MOY;VARCHAR2;"Température annuelle moyenne de l&#39;étage de végétation.";16;;Température annuelle moyenne;2016-11-16 18:18:07;2023-04-04 12:35:11
+654;80;SERIE;VARCHAR2;Information sur le compartiment sérial.;17;;Série de végétation;2016-11-16 18:18:45;2023-04-04 12:35:11
+655;80;ETAGE;VARCHAR2;Etage de végétation.;18;;Etage de végétation;2016-11-16 18:19:16;2023-04-04 12:35:11
+656;80;LOCALISATION;VARCHAR2;Localisation et/ou distribution des types de végétation.;19;;Localisation et/ou distribution;2016-11-16 18:19:41;2023-04-04 12:35:11
+657;80;COND_MILIEU;VARCHAR2;Informations sur les conditions stationnelles.;20;;Conditions stationnelles;2016-11-16 18:20:08;2023-04-04 12:35:11
+658;80;PHYSIO_GRPES_ECO;VARCHAR2;Informations sur la physionomie des végétations et les groupes écologiques qui les composent.;21;;Physionomie et groupes écologiques;2016-11-16 18:20:35;2023-04-04 12:35:11
+659;80;STATIONS_REF;VARCHAR2;Stations de référence où ont été réalisés les relevés phytosociologiques.;22;;Stations de référence;2016-11-16 18:21:15;2023-04-04 12:35:11
+660;80;DETERMINISME;VARCHAR2;;23;;Determinisme;2016-11-17 17:21:23;2023-04-04 12:35:11
+661;32;FAC_AB;VARCHAR2;"Facteurs abiotiques de l&#39;habitat";15;1000;Facteurs abiotiques;2016-11-24 00:00:00;2023-04-04 12:35:11
+662;32;CARAC_STAT;VARCHAR2;"Caractéristiques stationnelles de l&#39;habitat";16;;Caractéristiques stationnelles;2016-11-24 00:00:00;2023-04-04 12:35:11
+663;32;VAR;VARCHAR2;"Variabilité de l&#39;habitat";17;;Variabilité;2016-11-24 00:00:00;2023-04-04 12:35:11
+664;32;DYN;VARCHAR2;"Dynamique de l&#39;habitat";18;;Dynamique;2016-11-24 00:00:00;2023-04-04 12:35:11
+666;32;ESP_ASSO;VARCHAR2;"Espèces associées de l&#39;habitat";21;;Espèces associées;2016-11-24 00:00:00;2023-04-04 12:35:11
+667;32;CRITERES;VARCHAR2;"Principaux critères de reconnaissance de l&#39;habitat";22;;Principaux critères de reconnaissance;2016-11-24 00:00:00;2023-04-04 12:35:11
+668;32;HAB_ASSO;VARCHAR2;"Habitats associés ou en contact de l&#39;habitat";23;;Habitats associés ou en contact;2016-11-24 00:00:00;2023-04-04 12:35:11
+669;32;CONFUSIONS;VARCHAR2;"Confusions possibles avec d&#39;autres habitats";24;;Confusions possibles;2016-11-24 00:00:00;2023-04-04 12:35:11
+670;32;GEOGRAPHIE;VARCHAR2;"Répartition géographique de l&#39;habitat";25;;Répartition géographique;2016-11-24 00:00:00;2023-04-04 12:35:11
+671;32;STRUCTURE;VARCHAR2;"Structure et fonctions de l&#39;habitat";26;;Structure et fonctions;2016-11-24 00:00:00;2023-04-04 12:35:11
+672;32;INTERET;VARCHAR2;"Intérêt pour la conservation (incluant la valeur écologique et biologique ainsi que les potentialités intrinsèques de production) de l&#39;habitat";27;;Intérêt pour la conservation;2016-11-24 00:00:00;2023-04-04 12:35:11
+673;32;MENACES;VARCHAR2;"Menaces potentielles de l&#39;habitat";28;;Menaces potentielles;2016-11-24 00:00:00;2023-04-04 12:35:11
+674;32;TENDANCE;VARCHAR2;"Tendance évolutive de l&#39;habitat";29;;Tendance évolutive;2016-11-24 00:00:00;2023-04-04 12:35:11
+675;32;AUTEURS;VARCHAR2;Auteur(s) de la fiche descriptive;30;500;Auteur(s);2016-11-24 00:00:00;2023-04-04 12:35:11
+676;32;DATE_REDACTION;VARCHAR2;Date de rédaction de la fiche descriptive;31;500;Date de rédaction;2016-11-24 00:00:00;2023-04-04 12:35:11
+677;32;ESP_CAR;VARCHAR2;"Espèces caractéristiques de l&#39;habitat";19;;Espèces caractéristiques;2016-11-28 00:00:00;2023-04-04 12:35:11
+448;16;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+214;8;ESPECES;VARCHAR2;Espèces caractéristiques de l'habitat (source : manuel d'interprétation, version EUR 28).;23;4000;Espèces caractéristiques;2014-06-19 00:00:00;2023-04-04 12:35:11
+215;8;CORRESPONDANCES;VARCHAR2;Correspondances avec d'autres classifications d'habitats (source : manuel d'interprétation, version EUR 28).;25;4000;Correspondances avec d'autres classifications;2014-06-19 00:00:00;2023-04-04 12:35:11
+216;8;REMARQUES;VARCHAR2;Remarques sur l'habitat, principalement sur les autres types d'habitats généralement associés avec l'habitat sur le terrain (source : manuel d'interprétation, version EUR 28).;26;700;Remarques;2014-06-19 00:00:00;2023-04-04 12:35:11
+217;8;LB_CODE;VARCHAR2;Code UE (= code Natura 2000) de l'habitat.;4;4000;Code de l'habitat;2014-06-19 11:12:45;2023-04-04 12:35:11
+218;8;EUR_15_2;VARCHAR2;"Informations sur l&#39;habitat contenues dans la version EUR 15/2 en français du manuel d&#39;interprétation. Champ rempli uniquement pour les habitats marins présents en France (UE 1110 à 1180 et UE 8330).";27;4000;Informations du Manuel d'interprétation EUR 15/2;2014-06-19 00:00:00;2023-04-04 12:35:11
+225;45;LB_CODE;VARCHAR2;Code de l'habitat (non officiel). Source : 2008-7 (modifié).;4;4;Code;2014-06-19 11:12:45;2023-04-04 12:35:11
+226;45;CD_HAB_SUP;VARCHAR2;Code de l'habitat parent (supérieur);11;2;Identifiant HabRef du parent;2014-06-19 11:12:45;2023-04-04 12:35:11
+227;45;LB_NIVEAU;VARCHAR2;Niveau de l'habitat. Niveau 1 : Habitat. Niveau 2 : Sous-habitat.;10;10;Intitulé du niveau;2014-06-19 11:12:45;2023-04-04 12:35:11
+228;45;NIVEAU;VARCHAR2;Niveau hiérarchique de l'unité;9;1;Niveau;2014-06-19 11:12:45;2023-04-04 12:35:11
+229;45;LB_OSPAR_FR_2008_6;VARCHAR2;Libellé de l'habitat en français tel que cité dans 2008-6;15;100;Libellé de l'habitat en français dans 2008-6;2014-06-19 11:12:45;2023-04-04 12:35:11
+230;45;LB_HAB_EN;VARCHAR2;Libellé de l'habitat en anglais tel que cité dans 2008-6;7;100;Libellé en anglais;2014-06-19 11:12:45;2023-04-04 12:35:11
+231;45;LB_OSPAR_FR_2008_7;VARCHAR2;Libellé de l'habitat en français tel que cité dans 2008-7;16;100;Libellé de l'habitat en français dans 2008-7;2014-06-19 11:12:45;2023-04-04 12:35:11
+232;45;LB_HAB_FR;VARCHAR2;Libellé de l'habitat en français tel que cité dans 2008-6 ou dans 2008-7 (à utliser dans les bases françaises);5;100;Libellé;2014-06-19 11:12:45;2023-04-04 12:35:11
+233;45;FRANCE;VARCHAR2;Indication de la présence en France;13;5;Présence en France;2014-06-19 11:12:45;2023-04-04 12:35:11
+235;45;DESCRIPTION_OSPAR;VARCHAR2;"Description de l&#39;habitat. Source : 2008-7.";18;8000;Description;2014-06-19 00:00:00;2023-04-04 12:35:11
+236;45;REGIONS_OSPAR;VARCHAR2;"Régions OSPAR où l'habitat est présent. 
+Les régions OSPAR sont les suivantes : 
+I - Arctique : la zone maritime OSPAR qui s’étend au nord du 62° de latitude nord, mais qui comporte également l’Islande et les îles Féroé ; 
+II - Mer du Nord au sens large : la mer du Nord, la Manche, le Skagerrak et le Kattegat jusqu’aux limites de la zone maritime OSPAR, bordée au nord par le 62°de latitude nord, à l’ouest par le 5°de longitude ouest et la côte est de la Grande-Bretagne, et au sud par le 48°de latitude nord ; 
+III - Mers celtiques : bordées à l’est par le 5° de longitude ouest et la côte ouest de la Grande-Bretagne et à l’ouest par l’isobare de 200m (contour de profondeur) à l’ouest du 6° de longitude ouest le long des côtes ouest de l’Ecosse et de l’Irlande ; 
+IV - Golfe de Gascogne et côtes ibériques : région située au sud du 48°de latitude nord, à l’est du 11°de longitude ouest et au nord du 36°de latitude nord (la limite méridionale de la zone maritime OSPAR) ; 
+V - l’Atlantique au large : le reste de la zone maritime OSPAR. 
+Source : 2008-6.
+";19;30;Régions OSPAR où les habitats sont présents;2014-06-19 11:12:45;2023-04-04 12:35:11
+237;45;REGIONS_OSPAR_MENACES;VARCHAR2;Régions OSPAR où l'habitat est menacé et/ou en déclin. Source : 2008-6.;20;50;Régions OSPAR où l'habitat est menacé et/ou en déclin;2014-06-19 11:12:45;2023-04-04 12:35:11
+238;16;LB_CODE;VARCHAR2;Code paléarctique, à 1 ou 2 chiffres suivis au maximum de 6 décimales.;4;9;Code Paléarctique;2014-06-19 11:12:46;2023-04-04 12:35:11
+239;16;CD_HAB_SUP;VARCHAR2;Identifiant HabRef de l'habitat parent.;11;8;Identifiant HabRef du parent;2014-06-19 11:12:46;2023-04-04 12:35:11
+240;16;NIVEAU;NUMBER;Niveau du code paléarctique correspondant à son nombre de chiffres/lettres, de 1 à 8 (le . marquant la décimale n'est pas pris en compte).;9;22;Niveau;2014-06-19 11:12:46;2023-04-04 12:35:11
+242;16;FRANCE;VARCHAR2;Présence de l'habitat en France.;13;5;Présence en France;2014-06-19 11:12:46;2023-04-04 12:35:11
+244;16;LB_HAB_EN;VARCHAR2;Intitulé anglais de l'habitat.;7;255;Nom anglais;2014-06-19 11:12:46;2023-04-04 12:35:11
+245;16;CRSP_PHYTO;VARCHAR2;Correspondances phytosociologiques de l'habitat.;15;4000;Correspondances phytosociologiques;2014-06-19 11:12:46;2023-04-04 12:35:11
+472;28;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+246;16;LB_DESCRIPTION;VARCHAR2;Descriptif de l'habitat.;14;4000;Description;2014-06-19 11:12:46;2023-04-04 12:35:11
+347;22;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+248;35;LB_CODE;VARCHAR2;Code de l'habitat : code de la classification des habitats du Paléarctique ou nouveau code basé sur la même logique pour les habitats spécifiques à Saint-Pierre et Miquelon.;4;9;Code de l'habitat;2014-06-19 11:12:46;2023-04-04 12:35:11
+249;35;CD_HAB_SUP;VARCHAR2;Identifiant HabRef de l'habitat parent.;11;8;Identifiant HabRef du parent;2014-06-19 11:12:46;2023-04-04 12:35:11
+250;35;NIVEAU;NUMBER;Niveau du code de l'habitat correspondant à son nombre de chiffres/lettres, de 1 à 8 (le . marquant la décimale n'est pas pris en compte).;9;22;Niveau;2014-06-19 11:12:46;2023-04-04 12:35:11
+251;35;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;8;Intitulé du niveau;2014-06-19 11:12:46;2023-04-04 12:35:11
+252;35;FRANCE;BOOLEAN;Présence de l'habitat en France.;13;5;Présence en France;2014-06-19 11:12:46;2023-04-04 12:35:11
+253;35;LB_HAB_FR;VARCHAR2;Intitulé français des habitats : traduction en français des intitulés anglais de la classification Paléarctique ou, pour les habitats spécifiques à Saint-Pierre et Miquelon, intitulés formés à partir des descriptifs de Muller et Etcheberry 2006 ou créés nouvellement dans le cadre de ce travail.;5;255;Nom français;2014-06-19 11:12:46;2023-04-04 12:35:11
+254;35;LB_HAB_EN;VARCHAR2;"Intitulé anglais de l&#39;habitat (uniquement pour les habitats issus de la classification Paléarctique).";7;255;Nom anglais;2014-06-19 00:00:00;2023-04-04 12:35:11
+255;35;CRSP_PHYTO;VARCHAR2;"Correspondances phytosociologiques de l&#39;habitat.";16;3998;Correspondances phytosociologiques;2014-06-19 00:00:00;2023-04-04 12:35:11
+256;35;LB_DESCRIPTION;VARCHAR2;Descriptif français de l'habitat. Champ rempli uniquement pour certains habitats élémentaires de Saint-Pierre et Miquelon, sur la base de Muller et Etcheberry 2006. Pour ceux-ci, les espèces rares, ayant moins de 10 stations dans l'archipel, sont notées (R), celles qui sont très rares, n'ayant qu'une ou deux populations, sont notées (RR).;14;3998;Description;2014-06-19 11:12:46;2023-04-04 12:35:11
+257;35;DESCRIPTIF_EN;VARCHAR2;"Descriptif anglais de l&#39;habitat (uniquement pour les habitats issus de la classification Paléarctique).";15;3998;Descriptif anglais;2014-06-19 00:00:00;2023-04-04 12:35:11
+264;17;LB_CODE;VARCHAR2;Code hiérarchique attribué à chaque nom de syntaxon. Ce code est constitué d’‘une succession de un à neuf numéros séparés par un point. Le premier numéro est celui de la classe, le second de la sous-classe dans la classe, le troisième de l’‘ordre dans la classe, le quatrième du sous-ordre dans l’‘ordre, le cinquième de l’‘alliance dans l’‘ordre (ou le sous-ordre éventuellement), le sixième de la sous-alliance dans l’‘alliance, le septième de l’‘association dans l’‘alliance (ou la sous-alliance éventuellement), etc. En cas d’‘absence de rang supplémentaire, le code 0 est utilisé pour les sous-associations, les sous-alliances, les sous-ordres et les sous-classes. Les classes sont présentées selon leur ordre alphabétique, les syntaxons de rang inférieur issus du prodrome selon une logique écologique et de cohérence dans l’‘enchaînement des textes des diagnoses. Pour les syntaxons issus du Prodrome des végétations de France, le code prodrome a été conservé. Néanmoins, en l’‘absence d’‘autre alliance dans l’‘ordre, le code 70.0.2.0.2 (Thero-Suaedion splendentis) a été corrigé en 70.0.2.0.1. Les alliances ou sous-alliances non reconnues par le prodrome ont été placées à la suite des alliances ou sous-alliances du prodrome avec des codes suivant logiquement ceux des unités du Prodrome. Ainsi le Preslion cervinae a été placé après la dernière alliance des Isoetetalia durieui reconnue par le prodrome (34.0.1.0.2 Cicendion filiformis), et codé 34.0.1.0.3. Pour les niveaux inférieurs, de nouveaux codes ont été créés en suivant la logique du Prodrome (ajout de chiffres supplémentaires au code). Dans quelques cas la numérotation n'est pas continue suite à la suppression de syntaxons lors de la finalisation de la table. Afin de respecter la logique de codification, les groupes d’‘associations n’‘ont pas fait l’‘objet d’‘un numéro de code supplémentaire, on passe ainsi de 6 numéros pour les sous-alliances à 7 numéros pour les associations. Les groupes d’‘associations comportent 7 numéros mais sont distingués des associations par l’‘ajout de la lettre g avant le numéro de groupe (ex. : 13.0.1.0.3.0.g2 pour les Uliceta humilis Géhu 1996). Il est à noter que seuls les codes issus du Prodrome ont une valeur officielle.;4;18;Code Phyto_CH;2014-06-19 11:12:46;2023-04-04 12:35:11
+265;17;CD_HAB_SUP;VARCHAR2;"Code HabRef du syntaxon parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;16;Identifiant HabRef du parent;2014-06-19 11:12:46;2023-04-04 12:35:11
+266;17;NIVEAU;NUMBER;Niveau du syntaxon dans la classification phytosociologique, codé de 1 à 10.;9;22;Niveau;2014-06-19 11:12:46;2023-04-04 12:35:11
+267;17;LB_NIVEAU;VARCHAR2;Intitulé du niveau. 1 = classe (76 syntaxons), 2 = sous-classe (0), 3 = ordre (142), 4 = sous-ordre (7), 5 = alliance (380, dont 371 issues du prodrome), 6 = sous-alliance (120 dont 116 issues du prodrome), 7 = groupe d'associations (8), 8 = association ou groupement, libellé par simplicité association (1533), 9 = sous-association (376), 10 = race, variante, forme, faciès, sylvofaciès, libellé par simplicité variante (17).;10;256;Intitulé du niveau;2014-06-19 11:12:46;2023-04-04 12:35:11
+268;17;FRANCE;BOOLEAN;"TRUE = syntaxon présent en France ; ? = syntaxon dont la présence en France doit être confirmée ; FALSE = syntaxon absent en France.";13;256;Présence en France;2014-06-19 11:12:46;2023-04-04 12:35:11
+269;17;LB_HAB_FR;VARCHAR2;Nom latin du syntaxon.;5;256;Nom latin;2014-06-19 11:12:46;2023-04-04 12:35:11
+270;17;LB_HAB_EN;VARCHAR2;Nom en anglais du syntaxon. Champ ne pouvant être renseigné, le syntaxon étant en latin. Champ créé par souci d'homogénéité avec les autres bases de données habitats.;7;256;Nom anglais;2014-06-19 11:12:46;2023-04-04 12:35:11
+271;17;LB_HAB_FR_COMPLET;VARCHAR2;Nom complet du syntaxon. Ce champ résulte de la concaténation des champs LB_HAB_FR et LB_AUTEURS.;6;256;Nom complet;2014-06-19 11:12:46;2023-04-04 12:35:11
+272;17;LB_AUTEUR;VARCHAR2;"Descripteurs du syntaxon. Pour les syntaxons issus du Prodrome, les descripteurs sont repris du prodrome, après correction éventuelle signalée par le champ Modif_PVF1. Pour les syntaxons issus des Cahiers d’‘habitats, les descripteurs n’‘ont pas été systématiquement renseignés, ils sont repris des Cahiers d’‘habitats édités ou de documents de travail des Cahiers d’‘habitats les ayant mentionnés. Les descripteurs des syntaxons sont parfois suivis de précisions nomenclaturales sous forme abrégée. Signification des principales abréviations (selon le prodrome) : nom. ined. [nomen ineditum (nom inédité) en application de l’‘art. 1] ; nom. nud. [nomen nudum (nom nu) en application de l’‘art. 2, parag. b] ; nom. inval. [nomen invalidum (nom invalide) en application de l’‘art. 2, parag. a, c ou d] ; nom. illeg. [nomen illegitimum (nom illégitime) en application des art. 29 à 34] ; nom. dub. [nomen dubium (nom douteux) en application des art. 37 ou 38] ; nom. ambig. [nomen ambiguum (nom ambigu) en application de l’‘art. 36] ; nom. mut. [nomen mutatum (nom muté) en application de l’‘art. 45] ; nom. corr. [nomen correctum (nom corrigé) en application de l’‘art. 44] ; corr. [correxit (correction) en application de l’‘art. 43] ; nom. inv. [nomen inversum (nom inversé) en application de l’‘art. 42] ; nom. conserv. [nomen conservandum (nom conservé) en application de l’‘art. 52] ; nom. nov. [nomen novum (nouveau nom)] ; stat. nov. [status novus (nouveau statut)] ; hoc loco [dans cette publication] ; propos. [propositum (proposé)] ;  class. [classis (classe)] ; subclass. [subclassis (sous-classe)] ; ord. [ordo (ordre)] ;  subord. [subordo (sous-ordre)] ;  all. [alliancia (alliance)] ; suball. [suballiancia (sous-alliance)].";8;256;Auteurs;2014-06-19 11:12:46;2023-04-04 12:35:11
+314;6;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+275;17;REMARQUES_STATUT;VARCHAR2;Remarques sur le statut phytosociologique ou la présence en France du syntaxon.;15;4000;Remarques;2014-06-19 11:12:46;2023-04-04 12:35:11
+276;17;REMARQUES_POSITION;VARCHAR2;Remarques sur la position du syntaxon dans le synsystème.;16;4000;Remarques sur la place du syntaxon dans le synsystème;2014-06-19 00:00:00;2023-04-04 12:35:11
+282;18;CAT1;VARCHAR2;Catégorie majeure à laquelle appartient la classe selon le système écologique de la péninsule Ibérique (Rivas-Martínez et al., 1999).;20;100;Catégorie majeure;2014-06-19 00:00:00;2023-04-04 12:35:11
+316;6;LB_HAB_EN;VARCHAR2;Libellé en anglais;7;255;Libellé en anglais;2014-06-19 13:23:53;2023-04-04 12:35:11
+318;6;CD_TYPO;NUMBER;Identifiant de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+319;6;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+320;6;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+530;4;CARAC_DIAG_PHYSIO;VARCHAR2;"Caractères diagnostiques de l&#39;habitat - Physionomie, structure";23;;Physionomie, structure;2015-12-01 00:00:00;2023-04-04 12:35:12
+322;32;LB_DESCRIPTION;VARCHAR2;"Evolution du libellé de l&#39;unité d&#39;habitat";14;4000;Evolution;2014-06-19 00:00:00;2023-04-04 12:35:11
+323;32;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+326;32;CD_TYPO;NUMBER;Identifiant de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+327;32;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+328;32;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+283;18;CAT2;VARCHAR2;Catégorie secondaire à laquelle appartient la classe selon le système écologique de la péninsule Ibérique (Rivas-Martínez et al., 1999).;21;100;Catégorie secondaire;2014-06-19 00:00:00;2023-04-04 12:35:11
+284;18;LB_CODE;VARCHAR2;Code du syntaxon.;4;13;Code de l'habitat;2014-06-19 11:12:46;2023-04-04 12:35:11
+285;18;CD_HAB_SUP;VARCHAR2;Identifiant HabRef de l'habitat parent.;11;11;Identifiant HabRef du parent;2014-06-19 11:12:46;2023-04-04 12:35:11
+286;18;NIVEAU;NUMBER;Code du niveau du syntaxon dans la classification phytosociologique.;9;22;Niveau;2014-06-19 11:12:46;2023-04-04 12:35:11
+287;18;LB_NIVEAU;VARCHAR2;Intitulé du niveau du syntaxon.;10;255;Intitulé du niveau;2014-06-19 11:12:46;2023-04-04 12:35:11
+288;18;FRANCE;VARCHAR2;Présence du syntaxon en France.;13;5;Présence en France;2014-06-19 11:12:46;2023-04-04 12:35:11
+289;18;LB_HAB_FR;VARCHAR2;Nom latin du syntaxon.;5;255;Nom latin;2014-06-19 00:00:00;2023-04-04 12:35:11
+291;18;LB_HAB_FR_COMPLET;VARCHAR2;Nom complet du syntaxon.;6;255;Nom complet;2014-06-19 00:00:00;2023-04-04 12:35:11
+292;18;LB_AUTEUR;VARCHAR2;Descripteurs du syntaxon selon le prodrome, parfois suivis de précisions nomenclaturales, après correction éventuelle.;8;255;Auteurs corrigés;2014-06-19 00:00:00;2023-04-04 12:35:11
+295;18;LB_DESCRIPTION;VARCHAR2;Diagnose du syntaxon.;14;4000;Diagnose;2014-06-19 11:12:46;2023-04-04 12:35:11
+296;18;TYPUS_NOMINIS;VARCHAR2;Type du syntaxon.;17;4000;Type du syntaxon;2014-06-19 11:12:46;2023-04-04 12:35:11
+297;18;REMARQUES;VARCHAR2;Remarques sur le syntaxon.;18;255;Remarques;2014-06-19 00:00:00;2023-04-04 12:35:11
+301;28;CD_HAB_SUP;NUMBER;Identifiant HabRef de l'unité supérieure du syntaxon.;11;22;Identifiant HabRef du parent;2014-06-19 11:12:46;2023-04-04 12:35:11
+302;28;NIVEAU;NUMBER;Identifiant du niveau hiérarchique du syntaxon dans la classification phytosociologique (de 1 à 8).;9;22;Niveau;2014-06-19 11:12:46;2023-04-04 12:35:11
+531;4;ETAT_CONSERV;VARCHAR2;"Divers états de l&#39;habitat ; états de conservation à privilégier - États à privilégier - Autres états observables";31;;États de conservation;2015-12-01 00:00:00;2023-04-04 12:35:12
+532;4;GESTION_RAPPELS;VARCHAR2;"Cadre de gestion - Rappels de quelques caractères sensibles de l&#39;habitat";34;;Rappels de quelques caractères sensibles de l'habitat;2015-12-01 00:00:00;2023-04-04 12:35:12
+533;4;GESTION_GENE;VARCHAR2;Cadre de gestion - Recommandations générales.;36;;Recommandations générales;2015-12-01 00:00:00;2023-04-04 12:35:12
+534;4;GESTION_AUTRES;VARCHAR2;"Cadre de gestion - Autres éléments susceptibles d&#39;influer sur les modes de gestion de l&#39;habitat.";37;;Autres éléments susceptibles d'influer sur les modes de gestion de l'habitat;2015-12-01 00:00:00;2023-04-04 12:35:12
+540;78;LB_HAB_FR_COMPLET;VARCHAR2;"Libellé français / latin avec auteur. Champ créé par souci d&#39;homogénéité avec les autres bases de données habitats, mais non renseigné.";6;500;Nom complet;2016-08-24 00:00:00;2023-04-04 12:35:11
+541;78;LB_HAB_EN;VARCHAR2;"Intitulé anglais de l&#39;habitat. Champ créé par souci d&#39;homogénéité avec les autres bases de données habitats, mais non renseigné.";7;500;Nom anglais;2016-08-24 00:00:00;2023-04-04 12:35:11
+542;78;LB_AUTEUR;VARCHAR2;"Auteurs. Champ présent pour un soucis d&#39;homogénité des tables mais non rempli.";8;255;Auteurs;2016-08-24 00:00:00;2023-04-04 12:35:11
+543;78;NIVEAU;NUMBER;"Niveau de l&#39;habitat correspondant à son nombre de chiffres, de 1 à 4.";9;8;Niveau;2016-08-24 00:00:00;2023-04-04 12:35:11
+544;78;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;100;Intitulé du niveau;2016-08-24 00:00:00;2023-04-04 12:35:11
+545;78;CD_HAB_SUP;NUMBER;"Code HabRef de l&#39;habitat parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;8;Identifiant HabRef du parent;2016-08-24 00:00:00;2023-04-04 12:35:11
+546;78;PATH_CD_HAB;VARCHAR2;"Chemin de l&#39;arborescence pour atteindre ce code.";12;4000;Arborescence;2016-08-24 00:00:00;2023-04-04 12:35:11
+548;78;LB_DESCRIPTION;VARCHAR2;"Texte de description de l&#39;habitat.";14;4000;Description;2016-08-24 00:00:00;2023-04-04 12:35:11
+1071;100;REMARQUES;VARCHAR2;Remarques sur le syntaxon.;22;;Remarques;2022-03-08 00:00:00;2023-04-04 12:35:11
+424;8;LB_DESCRIPTION;VARCHAR2;"Définition de l&#39;habitat selon le Manuel d&#39;interprétation des habitats de l&#39;Union européenne, EUR 28 (EC, 2013).";14;4000;Définition EUR 28;2014-06-19 00:00:00;2023-04-04 12:35:11
+595;4;REMARQUES_SPN;VARCHAR2;"Remarques complémentaires sur l&#39;habitat.";41;2000;Remarques;2016-10-18 00:00:00;2023-04-04 12:35:12
+624;8;LB_DESCRIPTION_SUITE;VARCHAR2;"Définition de l&#39;habitat selon le Manuel d&#39;interprétation des habitats de l&#39;Union européenne, EUR 28 (EC, 2013) (suite).";15;;Définition EUR 28 (suite);2016-11-07 00:00:00;2023-04-04 12:35:11
+625;79;CORRESP_CORINE;VARCHAR2;"Correspondance avec le code CORINE biotopes (Hoff (coord.), 1997).
+Note : N.A. = Non attribué";15;;Correspondance CORINE Biotopes;2016-11-14 00:00:00;2023-04-04 12:35:11
+626;79;CORRESP_OS;VARCHAR2;"Correspondance avec la typologie d&#39;Occupation du Sol CORINE Land Cover.";16;;Correspondance CORINE Land Cover;2016-11-14 00:00:00;2023-04-04 12:35:11
+636;79;PROTECTION;VARCHAR2;"Indication du niveau de protection (exprimée en pourcentage de la surface occupée par l&#39;habitat).";27;;Protection du type forestier;2016-11-14 00:00:00;2023-04-04 12:35:11
+637;79;ZNIEFF_UN;VARCHAR2;"Indication du niveau d&#39;intégration dans les ZNIEFF de type 1 (exprimée en pourcentage de la surface occupée par l&#39;habitat).";28;;Intégration dans les ZNIEFF de type 1;2016-11-14 00:00:00;2023-04-04 12:35:11
+638;79;ZNIEFF_DEUX;VARCHAR2;"Indication du niveau d&#39;intégration dans les ZNIEFF de type 2 (exprimée en pourcentage de la surface occupée par l&#39;habitat).";29;;Intégration dans les ZNIEFF de type 2;2016-11-14 00:00:00;2023-04-04 12:35:11
+303;28;LB_NIVEAU;VARCHAR2;"Libellé du niveau hiérarchique. 1 : classe ; 2 : sous-classe ;  3 : ordre ; 4 : sous-ordre ; 5 : alliance ; 6 : sous-alliance ; 7 : groupe d'associations ; 8 : association.";10;50;Intitulé du niveau;2014-06-19 11:12:46;2023-04-04 12:35:11
+304;28;FRANCE;BOOLEAN;"Présence en France du syntaxon. TRUE : présent en France ; FALSE : absent en France ; ? : à rechercher en France.";13;10;Présence en France;2014-06-19 11:12:46;2023-04-04 12:35:11
+305;28;LB_HAB_FR;VARCHAR2;Libellé latin du syntaxon.;5;255;Nom latin;2014-06-19 00:00:00;2023-04-04 12:35:11
+306;28;LB_HAB_EN;VARCHAR2;Nom en anglais du syntaxon. Champ ne pouvant être renseigné, le syntaxon étant en latin. Champ créé par souci d'homogénéité avec les autres bases de données habitats.;7;255;Nom anglais;2014-06-19 11:12:46;2023-04-04 12:35:11
+308;28;LB_AUTEUR;VARCHAR2;Auteurs du syntaxon, éventuellement suivis d'indications nomenclaturales.;8;255;Auteurs;2014-06-19 11:12:46;2023-04-04 12:35:11
+311;28;REMARQUES;VARCHAR2;Commentaires éventuels associés aux unités supérieures et, ponctuellement, quelques informations complémentaires pertinentes, issus de la partie introductive des synthèses.;25;4000;Remarques;2014-06-19 00:00:00;2023-04-04 12:35:11
+33;32;LB_HAB_EN;VARCHAR2;Libellé en anglais;7;250;Libellé en anglais;2014-06-19 00:00:00;2023-04-04 12:35:11
+330;3;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code.;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+331;3;CD_TYPO;NUMBER;Identifiant de la typologie.;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+332;3;FG_VALIDITE;VARCHAR2;Validité du nom du syntaxon (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+333;3;CD_HAB;NUMBER;Identifiant unique du syntaxon. Non supprimable et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+335;4;LB_DESCRIPTION;VARCHAR2;Description de l'habitat.;14;4000;Description;2014-06-19 13:23:53;2023-04-04 12:35:12
+336;4;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code.;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:12
+339;4;CD_TYPO;NUMBER;Identifiant de la typologie.;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:12
+340;4;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:12
+343;22;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+344;22;LB_AUTEUR;VARCHAR2;Auteur;8;255;Auteur;2014-06-19 13:23:53;2023-04-04 12:35:11
+345;22;LB_HAB_FR_COMPLET;VARCHAR2;Libellé français / latin avec auteur;6;255;Nom complet;2014-06-19 13:23:53;2023-04-04 12:35:11
+346;22;CD_TYPO;NUMBER;Identifiant de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+348;22;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+359;26;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+362;26;CD_TYPO;NUMBER;Identifiant de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+364;26;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+366;7;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+368;7;LB_HAB_FR_COMPLET;VARCHAR2;Libellé français / latin avec auteur;6;255;Nom complet;2014-06-19 13:23:53;2023-04-04 12:35:11
+371;7;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+380;5;LB_DESCRIPTION;VARCHAR2;Texte de description de l'habitat;14;4000;Description;2014-06-19 13:23:53;2023-04-04 12:35:11
+381;5;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+384;5;CD_TYPO;NUMBER;Identifiant de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+385;5;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+386;5;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+388;70;LB_DESCRIPTION;VARCHAR2;Texte de description de l'habitat;14;4000;Description;2014-06-19 13:23:53;2023-04-04 12:35:11
+389;70;FRANCE;VARCHAR2;Présence en FRANCE (Metropole + DOM TOM + COM);13;5;Présence en France;2014-06-19 13:23:53;2023-04-04 12:35:11
+390;70;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+391;70;LB_AUTEUR;VARCHAR2;Auteurs. Champ présent pour un soucis d'homogénité des tables mais non rempli.;8;255;Auteurs;2014-06-19 13:23:53;2023-04-04 12:35:11
+392;70;LB_HAB_FR_COMPLET;VARCHAR2;Libellé français / latin avec auteur;6;255;Nom complet;2014-06-19 13:23:53;2023-04-04 12:35:11
+393;70;CD_TYPO;NUMBER;Identifiant de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+394;70;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+397;71;LB_DESCRIPTION;VARCHAR2;Texte de description de l'habitat;14;4000;Description;2014-06-19 13:23:53;2023-04-04 12:35:11
+398;71;FRANCE;VARCHAR2;Présence en FRANCE (Metropole + DOM TOM + COM);13;5;Présence en France;2014-06-19 13:23:53;2023-04-04 12:35:11
+399;71;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+400;71;LB_AUTEUR;VARCHAR2;Auteurs. Champ présent pour un soucis d'homogénité des tables mais non rempli.;8;255;Auteurs;2014-06-19 13:23:53;2023-04-04 12:35:11
+401;71;LB_HAB_FR_COMPLET;VARCHAR2;Libellé français / latin avec auteur;6;255;Nom complet;2014-06-19 13:23:53;2023-04-04 12:35:11
+402;71;CD_TYPO;NUMBER;Identifiant de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+403;71;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+404;71;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+406;72;LB_DESCRIPTION;VARCHAR2;Texte de description de l'habitat;14;4000;Description;2014-06-19 13:23:53;2023-04-04 12:35:12
+407;72;FRANCE;VARCHAR2;Présence en FRANCE (Metropole + DOM TOM + COM);13;5;Présence en France;2014-06-19 13:23:53;2023-04-04 12:35:12
+409;72;LB_AUTEUR;VARCHAR2;Auteurs. Champ présent pour un soucis d'homogénité des tables mais non rempli.;8;255;Auteurs;2014-06-19 13:23:53;2023-04-04 12:35:12
+410;72;LB_HAB_FR_COMPLET;VARCHAR2;Libellé français / latin avec auteur;6;255;Nom complet;2014-06-19 00:00:00;2023-04-04 12:35:12
+411;72;CD_TYPO;NUMBER;Identifiant de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:12
+412;72;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:12
+413;72;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:12
+415;46;LB_DESCRIPTION;VARCHAR2;Description de l'habitat;14;1000;Description;2014-06-19 13:23:53;2023-04-04 12:35:11
+416;46;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+418;46;LB_HAB_EN;VARCHAR2;Libellé en anglais;7;255;Libellé en anglais;2014-06-19 13:23:53;2023-04-04 12:35:11
+420;46;CD_TYPO;NUMBER;Identifiant de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+421;46;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+422;46;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+426;8;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code.;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+427;8;LB_NIVEAU;VARCHAR2;Libellé du niveau.;10;100;Intitulé du niveau;2014-06-19 13:23:53;2023-04-04 12:35:11
+428;8;NIVEAU;NUMBER;Niveau de l'habitat dans la typologie.;9;22;Niveau;2014-06-19 13:23:53;2023-04-04 12:35:11
+431;8;LB_HAB_FR;VARCHAR2;Intitulé français de l'habitat.;5;255;Nom français;2014-06-19 13:23:53;2023-04-04 12:35:11
+432;8;CD_TYPO;NUMBER;Identifiant de la typologie.;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+433;8;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+434;8;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+436;45;LB_DESCRIPTION;VARCHAR2;Description de l'habitat;14;4000;Description;2014-06-19 00:00:00;2023-04-04 12:35:11
+437;45;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+442;45;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+444;16;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code.;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+449;16;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+451;35;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+454;35;CD_TYPO;NUMBER;Identifiant de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+458;17;LB_DESCRIPTION;VARCHAR2;Texte de description de l'habitat;14;4000;Description;2014-06-19 13:23:53;2023-04-04 12:35:11
+459;17;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+461;17;FG_VALIDITE;VARCHAR2;Validité du nom de l'habitat (nom de référence / synonyme).;2;20;Validité;2014-06-19 13:23:53;2023-04-04 12:35:11
+462;17;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+464;18;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code.;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+465;18;CD_TYPO;NUMBER;Identifiant de la typologie.;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+467;18;CD_HAB;NUMBER;Identifiant unique de l'habitat. Non supprimable, et non réutilisable.;1;22;Identifiant HabRef de l'unité;2014-06-19 13:23:53;2023-04-04 12:35:11
+470;28;PATH_CD_HAB;VARCHAR2;Chemin de l'arborescence pour atteindre ce code;12;4000;Arborescence;2014-06-19 13:23:53;2023-04-04 12:35:11
+471;28;CD_TYPO;NUMBER;Identifiant de la typologie;3;22;Identifiant HabRef de la typologie;2014-06-19 13:23:53;2023-04-04 12:35:11
+899;97;FRANCE;VARCHAR2;Présence en FRANCE (Metropole + DOM TOM + COM).;13;5;Présence en France;2019-09-19 00:00:00;2023-04-04 12:35:11
+900;97;LB_HAB_EN;VARCHAR2;"Intitulé anglais de l&#39;habitat. Champ créé par souci d&#39;homogénéité avec les autres bases de données habitats, mais non renseigné.";7;500;Nom anglais;2019-09-19 00:00:00;2023-04-04 12:35:11
+721;89;DISTRIBUTION;VARCHAR2;"Distribution des postes typologiques dans les Antilles telle qu&#39;indiquée dans la publication d&#39;origine.";15;;Distribution des postes typologiques;2017-05-22 15:33:42;2023-04-04 12:35:11
+905;99;ECOL_DYN;VARCHAR2;Ecologie et dynamique du syntaxon.;18;;Ecologie et dynamique du syntaxon;2019-09-23 16:46:16;2023-04-04 12:35:11
+912;99;BIBL_ORIG;VARCHAR2;"Référence bibliographique d&#39;origine du syntaxon (parmi les 3 sources compilées).";25;;Référence bibliographique d'origine du syntaxon (parmi les 3 sources compilées);2019-09-23 00:00:00;2023-04-04 12:35:11
+726;89;COMMENTS;VARCHAR2;"Commentaires tels qu&#39;indiqués dans la publication d&#39;origine.";16;;Commentaires;2017-05-22 15:37:10;2023-04-04 12:35:11
+727;89;SYNONYMY;VARCHAR2;"Synonyme(s) du poste typologique tel(s) qu&#39;indiqué(s) dans la publication d&#39;origine.";17;;Synonymie;2017-05-22 15:37:45;2023-04-04 12:35:11
+728;89;REFERENCES;VARCHAR2;Référence(s) bibliographique(s) afférente(s) au poste typologique.;18;;Références;2017-05-22 15:38:33;2023-04-04 12:35:11
+729;89;MODIFICATION;VARCHAR2;"Modification(s) apportées par rapport à la publication d&#39;origine.";19;;Modification;2017-05-22 15:39:15;2023-04-04 12:35:11
+745;90;VERSANT;VARCHAR2;Versant(s) où sont localisés les postes typologiques.;18;;Versant(s);2017-05-22 18:18:22;2023-04-04 12:35:11
+747;90;PRECIPITATIONS_ANNUELLES;VARCHAR2;Précipitations annuelles moyennes des stations où sont observés les postes typologiques.;20;;Précipitations annuelles;2017-05-22 18:21:02;2023-04-04 12:35:11
+748;90;CARACTERES_PEDOLOGIQUES;VARCHAR2;Caractères pédologiques des stations où sont observés les postes typologiques.;23;;Caractères pédologiques;2017-05-22 18:21:35;2023-04-04 12:35:11
+766;78;DIAG_STRUCT;VARCHAR2;Diagnostic structural des postes typologiques.;16;;Diagnostic structural;2017-06-01 00:00:00;2023-04-04 12:35:11
+771;78;CORRESP_TMNHR;VARCHAR2;Correspondance avec la typologie adaptée Corine de La Réunion.;19;;Correspondance Corine Réunion;2017-06-01 00:00:00;2023-04-04 12:35:11
+772;78;NIVEAU_CODE;VARCHAR2;Type de correspondance avec la typologie adaptée Corine de La Réunion.;20;;Type de correspondance avec la typologie Corine Réunion;2017-06-01 00:00:00;2023-04-04 12:35:11
+931;100;CD_HAB;NUMBER;"Identifiant unique de l&#39;habitat. Non supprimable, et non réutilisable.";1;8;Identifiant HabRef de l'unité;2020-02-28 00:00:00;2023-04-04 12:35:11
+774;78;COORDONNEE_X;VARCHAR2;"Coordonnée X de la station de référence de l&#39;unité.";22;;Coordonnée X station de référence;2017-06-01 00:00:00;2023-04-04 12:35:11
+775;78;COORDONNEE_Y;VARCHAR2;"Coordonnée Y de la station de référence de l&#39;unité.";23;;Coordonnée Y station de référence;2017-06-01 00:00:00;2023-04-04 12:35:11
+889;97;CD_TYPO;NUMBER;Identifiant de la typologie.;3;8;Identifiant HabRef de la typologie;2019-09-19 00:00:00;2023-04-04 12:35:11
+887;97;CD_HAB;NUMBER;"Identifiant unique de l&#39;habitat. Non supprimable, et non réutilisable.";1;8;Identifiant HabRef de l'unité;2019-09-19 00:00:00;2023-04-04 12:35:11
+897;97;CD_HAB_SUP;NUMBER;"Code HabRef de l&#39;habitat parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;8;Identifiant HabRef du parent;2019-09-19 00:00:00;2023-04-04 12:35:11
+895;97;NIVEAU;NUMBER;"Niveau de l&#39;habitat.";9;8;Niveau;2019-09-19 00:00:00;2023-04-04 12:35:11
+896;97;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;100;Intitulé du niveau;2019-09-19 00:00:00;2023-04-04 12:35:11
+892;97;LB_HAB_FR_COMPLET;VARCHAR2;"Libellé français / latin avec auteur. Champ créé par souci d&#39;homogénéité avec les autres bases de données habitats, mais non renseigné.";6;500;Nom complet;2019-09-19 00:00:00;2023-04-04 12:35:11
+852;95;PATH_CD_HAB;VARCHAR2;;12;4000;;2019-04-18 11:18:37;2023-04-04 12:35:11
+799;92;CD_HAB;NUMBER;;1;8;;2019-04-16 15:02:31;2023-04-04 12:35:12
+808;92;LB_NIVEAU;VARCHAR2;;10;100;;2019-04-16 15:02:33;2023-04-04 12:35:12
+932;100;FG_VALIDITE;VARCHAR2;"Validité du nom de l&#39;habitat (nom de référence / synonyme).";2;20;Validité;2020-02-28 00:00:00;2023-04-04 12:35:11
+933;100;CD_TYPO;NUMBER;Identifiant de la typologie.;3;8;Identifiant HabRef de la typologie;2020-02-28 00:00:00;2023-04-04 12:35:11
+934;100;LB_CODE;VARCHAR2;"Code du syntaxon tel qu&#39;il figure dans Mucina et al. (2016).";4;50;Code;2020-02-28 00:00:00;2023-04-04 12:35:11
+936;100;LB_HAB_FR_COMPLET;VARCHAR2;Nom complet du syntaxon.;6;500;Nom complet;2020-02-28 00:00:00;2023-04-04 12:35:11
+937;100;LB_HAB_EN;VARCHAR2;Nom en anglais du grand type de milieu (groupe, formation, sous-formation).;7;500;Nom anglais;2020-02-28 00:00:00;2023-04-04 12:35:11
+938;100;LB_AUTEUR;VARCHAR2;"Auteurs du syntaxon, éventuellement suivis d&#39;indications nomenclaturales.";8;255;Auteurs;2020-02-28 00:00:00;2023-04-04 12:35:11
+939;100;NIVEAU;NUMBER;"Identifiant du niveau hiérarchique de l&#39;unité (de 1 à 6).";9;8;Niveau;2020-02-28 00:00:00;2023-04-04 12:35:11
+941;100;CD_HAB_SUP;NUMBER;"Identifiant HabRef de l&#39;unité supérieure du syntaxon.";11;8;Identifiant HabRef du parent;2020-02-28 00:00:00;2023-04-04 12:35:11
+942;100;PATH_CD_HAB;VARCHAR2;"Chemin de l&#39;arborescence pour atteindre le CD_HAB de l&#39;unité typologique.";12;4000;Arborescence;2020-02-28 00:00:00;2023-04-04 12:35:11
+943;100;FRANCE;VARCHAR2;"Présence en France du syntaxon. TRUE : présent ou à rechercher en France ; FALSE : absent en France.";13;5;Présence en France;2020-02-28 00:00:00;2023-04-04 12:35:11
+944;100;LB_DESCRIPTION;VARCHAR2;Diagnose du syntaxon.;14;4000;Diagnose;2020-02-28 00:00:00;2023-04-04 12:35:11
+985;46;FAC_AB;VARCHAR2;"Facteurs abiotiques de l&#39;habitat.";16;;Facteurs abiotiques;2021-04-15 00:00:00;2023-04-04 12:35:11
+986;46;CARAC_STAT;VARCHAR2;"Caractéristiques stationnelles de l&#39;habitat.";17;;Caractéristiques stationnelles;2021-04-15 00:00:00;2023-04-04 12:35:11
+988;46;DYN;VARCHAR2;"Dynamique temporelle de l&#39;habitat.";21;;Dynamique temporelle;2021-04-15 00:00:00;2023-04-04 12:35:11
+989;46;ESP_ASSO;VARCHAR2;"Espèces associées de l&#39;habitat.";20;;Espèces associées;2021-04-15 00:00:00;2023-04-04 12:35:11
+990;46;HAB_ASSO;VARCHAR2;"Habitats pouvant être associés ou en contact avec l&#39;habitat.";22;;Habitats pouvant être associés ou en contact;2021-04-15 00:00:00;2023-04-04 12:35:11
+991;46;CONFUSIONS;VARCHAR2;"Confusions possibles avec d&#39;autres habitats.";23;;Confusions possibles;2021-04-15 00:00:00;2023-04-04 12:35:11
+992;46;GEOGRAPHIE;VARCHAR2;"Répartition géographique de l&#39;habitat.";24;;Répartition géographique;2021-04-15 00:00:00;2023-04-04 12:35:11
+993;46;FONCTIONS;VARCHAR2;"Fonctions écologiques de l&#39;habitat.";25;;Fonctions écologiques;2021-04-15 00:00:00;2023-04-04 12:35:11
+994;46;TENDANCE;VARCHAR2;"Tendance évolutive de l&#39;habitat.";27;;Tendance évolutive;2021-04-15 00:00:00;2023-04-04 12:35:11
+995;46;ESP_CAR;VARCHAR2;"Communautés ou espèces caractéristiques de l&#39;habitat.";19;;Communautés ou espèces caractéristiques;2021-04-15 00:00:00;2023-04-04 12:35:11
+731;90;CD_HAB_SUP;NUMBER;"Code HabRef de l&#39;habitat parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;;Identifiant HabRef du parent;2017-05-22 17:43:50;2023-04-04 12:35:11
+735;90;LB_CODE;VARCHAR2;Code compartiment écologique adapté de la codification initiale du référentiel. Voir le champ CORRES_CARTO pour la codification initiale des postes typologiques.;4;;Code compartiment écologique de Guadeloupe;2017-05-22 18:00:34;2023-04-04 12:35:11
+733;90;FG_VALIDITE;VARCHAR2;"Validité du nom de l&#39;habitat (nom de référence / synonyme).";2;;Validité;2017-05-22 17:57:33;2023-04-04 12:35:11
+734;90;CD_TYPO;NUMBER;Identifiant de la typologie.;3;;Identifiant HabRef de la typologie;2017-05-22 17:58:25;2023-04-04 12:35:11
+813;93;CD_HAB;NUMBER;;1;8;;2019-04-17 14:17:40;2023-04-04 12:35:11
+746;90;ALTITUDE;VARCHAR2;Tranche altitudinale dans laquelle le poste typologique est présent.;19;;Altitude;2017-05-22 18:20:02;2023-04-04 12:35:11
+749;90;RISQUES_PRINCIPAUX;VARCHAR2;Risques principaux des stations où sont observés les postes typologiques.;24;;Risques principaux;2017-05-22 18:25:02;2023-04-04 12:35:11
+751;90;DEFICIT_HYDRIQUE_ANNUEL;VARCHAR2;Déficit hydrique annuel des stations où sont observés les postes typologiques.;22;;Déficit hydrique annuel;2017-05-22 18:27:12;2023-04-04 12:35:11
+752;90;ESPECES;VARCHAR2;Espèces arborescentes qui composent les postes typologiques.;25;;Espèces;2017-05-22 18:27:49;2023-04-04 12:35:11
+753;90;LB_HAB_EN;VARCHAR2;"Intitulé anglais de l&#39;habitat. Champ créé par souci d&#39;homogénéité avec les autres bases de données habitats, mais non renseigné.";7;;Nom anglais;2017-05-22 18:30:32;2023-04-04 12:35:11
+757;90;FRANCE;BOOLEAN;Présence en FRANCE (Metropole + DOM TOM + COM).;13;;Présence en France;2017-05-22 18:35:05;2023-04-04 12:35:11
+758;88;FRANCE;BOOLEAN;Présence en FRANCE (Metropole + DOM TOM + COM).;13;;Présence en France;2017-05-24 07:52:15;2023-04-04 12:35:11
+760;89;FRANCE;BOOLEAN;Présence en FRANCE (Metropole + DOM TOM + COM).;13;;Présence en France;2017-05-24 07:55:10;2023-04-04 12:35:11
+777;88;LB_RARETE_MAY;VARCHAR2;"Libellé issu de la traduction du code de rareté régionale de l&#39;habitat. Cet indice est similaire à celui qui a été développé pour la flore spontanée. Il a notamment été utilisé pour les habitats dans le cadre du Schéma des Espaces Naturels Sensibles de la Réunion [CBNM 2003]. L&#39;indice comprend huit niveaux (E, RR, R, AR, AC, PC, C, CC) dont la terminologie exacte est la suivante : E : exceptionnel ; RR : très rare ; R : rare ; AR : assez rare ; PC : peu commun ; AC : assez commun ; C : commun ; CC : très commun. L&#39;indice de rareté régionale est basé sur le coefficient de Rareté régionale qui est en cours de test à Mayotte [lors de la publication du référentiel typologique en 2005]. Un signe d’interrogation placé à la suite de l’indice de rareté régionale « E?, RR?, R?, AR?, PC?, AC?, C? ou CC? », indique que la rareté estimée doit être confirmée. On utilise le code complémentaire ""? "" pour un habitat présent dans le territoire mais dont la rareté ne peut-être évaluée sur la base des connaissances actuelles.";19;;Rareté de l'habitat à Mayotte;2017-06-27 00:00:00;2023-04-04 12:35:11
+779;88;LB_TYPE_CHOROLOGIQUE;VARCHAR2;"Catégorie chorologique d&#39;appartenance de l&#39;habitat. Codification utilisée AF : africain ; IP : indo-pacifique ; OI : océan indien ; PAL : paléotropical ; P : pantropical ; W : malgache (sensu stricto) ; W2 : malgache-comorien ; WOI : ouest océan indien.";25;;Type chorologique de l'habitat;2017-06-27 00:00:00;2023-04-04 12:35:11
+814;93;FG_VALIDITE;VARCHAR2;;2;20;;2019-04-17 14:17:41;2023-04-04 12:35:11
+815;93;CD_TYPO;NUMBER;;3;8;;2019-04-17 14:17:41;2023-04-04 12:35:11
+816;93;LB_CODE;VARCHAR2;;4;50;;2019-04-17 14:17:41;2023-04-04 12:35:11
+817;93;LB_HAB_FR;VARCHAR2;;5;500;;2019-04-17 14:17:41;2023-04-04 12:35:11
+818;93;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2019-04-17 14:17:41;2023-04-04 12:35:11
+819;93;LB_HAB_EN;VARCHAR2;;7;500;;2019-04-17 14:17:41;2023-04-04 12:35:11
+820;93;LB_AUTEUR;VARCHAR2;;8;255;;2019-04-17 14:17:41;2023-04-04 12:35:11
+821;93;NIVEAU;NUMBER;;9;8;;2019-04-17 14:17:41;2023-04-04 12:35:11
+822;93;LB_NIVEAU;VARCHAR2;;10;100;;2019-04-17 14:17:41;2023-04-04 12:35:11
+823;93;CD_HAB_SUP;NUMBER;;11;8;;2019-04-17 14:17:41;2023-04-04 12:35:11
+824;93;PATH_CD_HAB;VARCHAR2;;12;4000;;2019-04-17 14:17:41;2023-04-04 12:35:11
+825;93;FRANCE;VARCHAR2;;13;5;;2019-04-17 14:17:41;2023-04-04 12:35:11
+826;93;LB_DESCRIPTION;VARCHAR2;;14;4000;;2019-04-17 14:17:41;2023-04-04 12:35:11
+901;99;CORTEGE_FLORISTIQUE;VARCHAR2;Informations portant sur le cortège floristique du syntaxon.;15;;Cortège floristique;2019-09-23 00:00:00;2023-04-04 12:35:11
+902;99;HOLOTYPE;VARCHAR2;Holotype du syntaxon tel que décrit dans la publication.;16;;Holotype;2019-09-23 16:43:45;2023-04-04 12:35:11
+903;99;SYNTAXO_SYNCHORO;VARCHAR2;Syntaxonomie et synchorologie du syntaxon.;17;;Syntaxonomie et synchorologie du syntaxon;2019-09-23 16:44:42;2023-04-04 12:35:11
+908;99;PL_DISCR;VARCHAR2;"Plantes discriminantes à l&#39;égard du syntaxon.";21;;Plantes discriminantes à l'égard du syntaxon;2019-09-23 00:00:00;2023-04-04 12:35:11
+906;99;VAR_SYNTAXON;VARCHAR2;Variations existant au sein du syntaxon.;19;;Variations existant au sein du syntaxon;2019-09-23 16:47:25;2023-04-04 12:35:11
+907;99;PHYSIO;VARCHAR2;Physionomie du syntaxon.;20;;Physionomie du syntaxon;2019-09-23 16:48:40;2023-04-04 12:35:11
+909;99;DISTRIBUTION;VARCHAR2;Distribution du syntaxon.;22;;Distribution du syntaxon;2019-09-23 16:50:39;2023-04-04 12:35:11
+910;99;PREC_TERRIT_WF;VARCHAR2;"Précision sur la présence du syntaxon à Wallis-et-Futuna et référence bibliographique de l&#39;information.";23;;Précision sur la présence du syntaxon à Wallis-et-Futuna et référence bibliographique de l'information;2019-09-23 16:51:22;2023-04-04 12:35:11
+911;99;REMARQUE;VARCHAR2;Remarque des auteurs.;24;;Remarque des auteurs;2019-09-23 16:52:01;2023-04-04 12:35:11
+987;46;VAR;VARCHAR2;"Variabilité de l&#39;habitat.";18;;Variabilité;2021-04-15 00:00:00;2023-04-04 12:35:11
+997;46;AUTEURS;VARCHAR2;Auteur(s) de la fiche descriptive.;29;;Auteur(s);2021-04-15 00:00:00;2023-04-04 12:35:11
+998;46;SOURCE_AJOUT;VARCHAR2;"Source de l&#39;ajout de l&#39;habitat à la typologie.";15;;Source de l'ajout à la typologie;2021-04-15 00:00:00;2023-04-04 12:35:11
+999;46;DATE_REDACTION;VARCHAR2;Date de rédaction de la fiche descriptive.;30;;Date de rédaction;2021-04-19 15:50:27;2023-04-04 12:35:11
+1000;104;CD_HAB;NUMBER;;1;8;;2021-07-05 00:00:00;2023-04-04 12:35:11
+1001;104;FG_VALIDITE;VARCHAR2;Validité du nom du micro-habitat (NR : nom de référence);2;20;Validité;2021-07-05 00:00:00;2023-04-04 12:35:11
+1002;104;CD_TYPO;NUMBER;;3;8;;2021-07-05 14:42:42;2023-04-04 12:35:11
+1003;104;LB_CODE;VARCHAR2;Code du micro-habitat selon le système hiérarchique (Forme, Groupe, Type);4;50;Code du micro-habitat;2021-07-05 00:00:00;2023-04-04 12:35:11
+1004;104;LB_HAB_FR;VARCHAR2;Nom du micro-habitat quel que soit le niveau hiérarchique;5;500;Nom du micro-habitat;2021-07-05 00:00:00;2023-04-04 12:35:11
+678;79;REMARQUES_CATEGORIES;VARCHAR2;"Remarques sur la catégorie et le lien avec l&#39;habitat parent.";25;;Remarques sur la catégorie;2017-01-04 00:00:00;2023-04-04 12:35:11
+704;88;FLORE_COMPAGNE;VARCHAR2;"Plantes sans valeur particulière de diagnostic, fréquentes ou dominantes dans l&#39;habitat.";17;;Flore compagne de l'unité typologique;2017-05-22 00:00:00;2023-04-04 12:35:11
+855;96;CD_HAB;NUMBER;;1;8;;2019-06-07 13:43:01;2023-04-04 12:35:11
+730;90;CD_HAB;NUMBER;"Identifiant unique de l&#39;habitat. Non supprimable, et non réutilisable.";1;8;Identifiant HabRef de l'unité;2017-05-22 00:00:00;2023-04-04 12:35:11
+856;96;FG_VALIDITE;VARCHAR2;;2;20;;2019-06-07 13:43:02;2023-04-04 12:35:11
+738;90;LB_AUTEUR;VARCHAR2;"Auteur(s). Champ présent pour un soucis d&#39;homogénéité des tables mais non rempli.";8;;Auteur(s);2017-05-22 18:05:20;2023-04-04 12:35:11
+743;90;SECTEUR;;Nom du secteur concerné par le poste typologique.;17;;Secteur;2017-05-22 18:09:36;2023-04-04 12:35:11
+857;96;CD_TYPO;NUMBER;;3;8;;2019-06-07 13:43:03;2023-04-04 12:35:11
+858;96;LB_CODE;VARCHAR2;;4;50;;2019-06-07 13:43:03;2023-04-04 12:35:11
+859;96;LB_HAB_FR;VARCHAR2;;5;500;;2019-06-07 13:43:03;2023-04-04 12:35:11
+860;96;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2019-06-07 13:43:03;2023-04-04 12:35:11
+861;96;LB_HAB_EN;VARCHAR2;;7;500;;2019-06-07 13:43:03;2023-04-04 12:35:11
+862;96;LB_AUTEUR;VARCHAR2;;8;255;;2019-06-07 13:43:03;2023-04-04 12:35:11
+863;96;NIVEAU;NUMBER;;9;8;;2019-06-07 13:43:03;2023-04-04 12:35:11
+864;96;LB_NIVEAU;VARCHAR2;;10;100;;2019-06-07 13:43:03;2023-04-04 12:35:11
+865;96;CD_HAB_SUP;NUMBER;;11;8;;2019-06-07 13:43:03;2023-04-04 12:35:11
+866;96;PATH_CD_HAB;VARCHAR2;;12;4000;;2019-06-07 13:43:03;2023-04-04 12:35:11
+867;96;FRANCE;VARCHAR2;;13;5;;2019-06-07 13:43:03;2023-04-04 12:35:11
+868;96;LB_DESCRIPTION;VARCHAR2;;14;4000;;2019-06-07 13:43:03;2023-04-04 12:35:11
+996;46;STATUT_CONS;VARCHAR2;"Statut de conservation de l&#39;habitat.";26;;Statut de conservation;2021-04-15 00:00:00;2023-04-04 12:35:11
+1006;104;LB_HAB_EN;VARCHAR2;Nom anglais du micro-habitat selon Larrieu 2018;7;500;Nom anglais du micro-habitat;2021-07-05 00:00:00;2023-04-04 12:35:11
+1008;104;NIVEAU;NUMBER;Niveau du micro-habitat (niveau 1 = Forme, niveau 2 = Groupe, niveau 3 = Type);9;8;Niveau;2021-07-05 00:00:00;2023-04-04 12:35:11
+1009;104;LB_NIVEAU;VARCHAR2;Intitulé du niveau du micro-habitat;10;100;Intitulé du niveau du micro-habitat;2021-07-05 00:00:00;2023-04-04 12:35:11
+1010;104;CD_HAB_SUP;NUMBER;Identifiant HabRef du micro-habitat parent;11;8;Identifiant HabRef du micro-habitat parent;2021-07-05 00:00:00;2023-04-04 12:35:11
+1011;104;PATH_CD_HAB;VARCHAR2;;12;4000;;2021-07-05 14:42:43;2023-04-04 12:35:11
+1012;104;FRANCE;VARCHAR2;Présence du micro-habitat en France.;13;5;Présence en France;2021-07-05 00:00:00;2023-04-04 12:35:11
+1013;104;LB_DESCRIPTION;VARCHAR2;Définition du micro-habitat;14;4000;Description du micro-habitat;2021-07-05 00:00:00;2023-04-04 12:35:11
+1049;107;CD_HAB;NUMBER;"Identifiant unique de l&#39;habitat. Non supprimable et non réutilisable.";1;8;Identifiant HabRef de l'unité;2022-03-08 00:00:00;2023-04-04 12:35:12
+1050;107;FG_VALIDITE;VARCHAR2;"Validité du nom de l&#39;habitat (nom de référence / synonyme).";2;20;Validité;2022-03-08 00:00:00;2023-04-04 12:35:12
+1051;107;CD_TYPO;NUMBER;Identifiant HabRef de la typologie;3;8;Identifiant HabRef de la typologie;2022-03-08 00:00:00;2023-04-04 12:35:12
+1052;107;LB_CODE;VARCHAR2;"Code EUNIS de l&#39;unité.";4;50;Code EUNIS;2022-03-08 00:00:00;2023-04-04 12:35:12
+1055;107;LB_HAB_EN;VARCHAR2;"Intitulé en anglais de l&#39;habitat EUNIS.";7;500;Intitulé anglais de l'habitat;2022-03-08 00:00:00;2023-04-04 12:35:12
+1058;107;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;100;Intitulé du niveau;2022-03-08 00:00:00;2023-04-04 12:35:12
+1059;107;CD_HAB_SUP;NUMBER;"Code HabRef parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;8;Identifiant HabRef du parent;2022-03-08 00:00:00;2023-04-04 12:35:12
+1060;107;PATH_CD_HAB;VARCHAR2;"Chemin de l&#39;arborescence pour atteindre ce code.";12;4000;Arborescence;2022-03-08 00:00:00;2023-04-04 12:35:12
+1062;107;LB_DESCRIPTION;VARCHAR2;"Descriptif en anglais de l&#39;habitat EUNIS.";14;4000;Descriptif de l'habitat;2022-03-08 00:00:00;2023-04-04 12:35:12
+940;100;LB_NIVEAU;VARCHAR2;"Libellé du niveau hiérarchique. 1 : groupe ; 2 : formation ; 3 : sous-formation ; 4 : classe ; 5 : ordre ; 6 : alliance.";10;100;Intitulé du niveau;2020-02-28 00:00:00;2023-04-04 12:35:11
+1085;108;LB_NIVEAU;VARCHAR2;Intitulé du niveau;10;100;Intitulé du niveau;2022-03-11 00:00:00;2023-04-04 12:35:11
+1086;108;CD_HAB_SUP;NUMBER;"Code de l&#39;habitat parent (supérieur)";11;8;Identifiant HabRef du parent;2022-03-11 00:00:00;2023-04-04 12:35:11
+1087;108;PATH_CD_HAB;VARCHAR2;"Chemin de l&#39;arborescence pour atteindre ce code";12;4000;Arborescence;2022-03-11 00:00:00;2023-04-04 12:35:11
+1088;108;FRANCE;VARCHAR2;;13;5;;2022-03-11 00:00:00;2023-04-04 12:35:11
+761;78;FRANCE;BOOLEAN;Présence en FRANCE (Metropole + DOM TOM + COM).;13;;Présence en France;2017-06-01 11:48:10;2023-04-04 12:35:11
+827;94;CD_HAB;NUMBER;;1;8;;2019-04-18 10:51:02;2023-04-04 12:35:11
+828;94;FG_VALIDITE;VARCHAR2;;2;20;;2019-04-18 10:51:08;2023-04-04 12:35:11
+829;94;CD_TYPO;NUMBER;;3;8;;2019-04-18 10:51:11;2023-04-04 12:35:11
+830;94;LB_CODE;VARCHAR2;;4;50;;2019-04-18 10:51:11;2023-04-04 12:35:11
+831;94;LB_HAB_FR;VARCHAR2;;5;500;;2019-04-18 10:51:14;2023-04-04 12:35:11
+832;94;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2019-04-18 10:51:14;2023-04-04 12:35:11
+833;94;LB_HAB_EN;VARCHAR2;;7;500;;2019-04-18 10:51:15;2023-04-04 12:35:11
+834;94;LB_AUTEUR;VARCHAR2;;8;255;;2019-04-18 10:51:17;2023-04-04 12:35:11
+835;94;NIVEAU;NUMBER;;9;8;;2019-04-18 10:51:20;2023-04-04 12:35:11
+836;94;LB_NIVEAU;VARCHAR2;;10;100;;2019-04-18 10:51:20;2023-04-04 12:35:11
+837;94;CD_HAB_SUP;NUMBER;;11;8;;2019-04-18 10:51:20;2023-04-04 12:35:11
+838;94;PATH_CD_HAB;VARCHAR2;;12;4000;;2019-04-18 10:51:23;2023-04-04 12:35:11
+839;94;FRANCE;VARCHAR2;;13;5;;2019-04-18 10:51:23;2023-04-04 12:35:11
+840;94;LB_DESCRIPTION;VARCHAR2;;14;4000;;2019-04-18 10:51:23;2023-04-04 12:35:11
+893;97;LB_DESCRIPTION;VARCHAR2;Description des postes typologiques.;14;4000;Description;2019-09-19 00:00:00;2023-04-04 12:35:11
+927;97;PHYSIONOMIE;VARCHAR2;Physionomie du groupement végétal.;15;;Physionomie;2019-09-24 12:15:38;2023-04-04 12:35:11
+928;97;DISTRIBUTION;VARCHAR2;"Distribution de l&#39;unité dans le territoire d&#39;étude.";16;;Distribution;2019-09-24 12:16:06;2023-04-04 12:35:11
+929;97;ESPECES_CARACTERISTIQUES;VARCHAR2;"Liste d&#39;espèces caractéristiques de l&#39;unité.";17;;Espèces caractéristiques;2019-09-24 12:16:32;2023-04-04 12:35:11
+930;28;SYNDYNAMIQUE;VARCHAR2;Succession dans le temps du syntaxon.;22;;Syndynamique;2020-01-16 00:00:00;2023-04-04 12:35:11
+1014;104;TAILLE_SEUIL;NUMBER;Taille seuil du micro-habitat;15;;Taille seuil du micro-habitat;2021-07-28 00:00:00;2023-04-04 12:35:11
+679;7;LIEN_SITE;LINK;"Lien vers la fiche de l&#39;habitat sur le site internet d&#39;EUNIS";19;100;Lien vers la fiche du site EUNIS;2017-01-19 11:51:05;2023-04-04 12:35:11
+680;88;CD_HAB;NUMBER;"Identifiant unique de l&#39;habitat. Non supprimable, et non réutilisable.";1;8;Identifiant HabRef de l'unité;2017-05-22 00:00:00;2023-04-04 12:35:11
+681;88;FG_VALIDITE;VARCHAR2;"Validité du nom de l&#39;habitat (nom de référence / synonyme).";2;20;Validité;2017-05-22 00:00:00;2023-04-04 12:35:11
+682;88;CD_TYPO;NUMBER;Identifiant de la typologie.;3;8;Identifiant HabRef de la typologie;2017-05-22 00:00:00;2023-04-04 12:35:11
+683;88;LB_CODE;VARCHAR2;"Codification hiérarchique avec une lettre (de A à H) pour le domaine principal d&#39;habitats + un chiffre (de 1 à 9 ou, si plus, une lettre dans l&#39;ordre alphabétique) pour le sous-domaine majeur. Les unités typologiques inférieures sont chiffrées (de 1 à 9 ou, si plus, lettrées dans l&#39;ordre alphabétique). Les niveaux hiérarchiques sont présentés par bloc de deux avec un point séparateur entre blocs.";4;50;Code Typologie des habitats de Mayotte;2017-05-22 00:00:00;2023-04-04 12:35:11
+684;88;LB_HAB_FR;VARCHAR2;"L&#39;intitulé de l&#39;habitat s&#39;appuie si possible sur le type de végétation caractéristique de l&#39;habitat. La terminologie utilisée ne nous semble pas, en l&#39;état, totalement satisfaisante sur plusieurs points : absence de terme adéquat, terme confus ou ne faisant pas l&#39;unanimité, terme inhabituel en région tropicale, etc. Comme toujours dans ce genre d&#39;exercice, il n&#39;a pas été possible d&#39;éviter une certaine hétérogénéité des objets désignés entre ""végétation, milieu, élément de relief et paysage"". Certains termes possèdent déjà de toute façon cette ambiguïté comme ""mangrove"" ou ""forêt"". Des améliorations de cette terminologie sont prévues avec la présentation du synsystème phytosociologique de Mayotte.";5;500;Nom français;2017-05-22 00:00:00;2023-04-04 12:35:11
+688;88;NIVEAU;NUMBER;"Niveau de l&#39;habitat correspondant à son nombre de chiffres, de 1 à 7 (le . marquant la décimale n&#39;est pas pris en compte).";9;8;Niveau;2017-05-22 00:00:00;2023-04-04 12:35:11
+689;88;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;100;Intitulé du niveau;2017-05-22 00:00:00;2023-04-04 12:35:11
+690;88;CD_HAB_SUP;NUMBER;"Code HabRef de l&#39;habitat parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;8;Identifiant HabRef du parent;2017-05-22 00:00:00;2023-04-04 12:35:11
+691;88;PATH_CD_HAB;VARCHAR2;"Chemin de l&#39;arborescence pour atteindre ce code.";12;4000;Arborescence;2017-05-22 00:00:00;2023-04-04 12:35:11
+783;4;LIEN_PDF;LINK;"Fiche de l&#39;habitat extraite du cahier d&#39;habitats en format pdf";42;100;Fiche du cahier d'habitats (format pdf);2018-03-21 17:58:22;2023-04-04 12:35:12
+705;89;CD_HAB;NUMBER;"Identifiant unique de l&#39;habitat. Non supprimable, et non réutilisable.";1;8;Identifiant HabRef de l'unité;2017-05-22 00:00:00;2023-04-04 12:35:11
+706;89;FG_VALIDITE;VARCHAR2;"Validité du nom de l&#39;habitat (nom de référence / synonyme).";2;20;Validité;2017-05-22 00:00:00;2023-04-04 12:35:11
+707;89;CD_TYPO;NUMBER;Identifiant de la typologie.;3;8;Identifiant HabRef de la typologie;2017-05-22 00:00:00;2023-04-04 12:35:11
+708;89;LB_CODE;VARCHAR2;"Codification hiérarchique , chaque niveau est séparé par un signe de ponctuation : "".""";4;50;Code Typologie de la végétation des Antilles;2017-05-22 00:00:00;2023-04-04 12:35:11
+709;89;LB_HAB_FR;VARCHAR2;"Intitulé français de l&#39;unité typologique. Champ créé par souci d&#39;homogénéité avec les autres bases de données habitats, mais non renseigné (en anglais dans la publication d&#39;origine).";5;500;Nom français;2017-05-22 00:00:00;2023-04-04 12:35:11
+710;89;LB_HAB_FR_COMPLET;VARCHAR2;"Libellé français / latin avec auteur. Champ créé par souci d&#39;homogénéité avec les autres bases de données habitats, mais non renseigné.";6;500;Nom complet;2017-05-22 00:00:00;2023-04-04 12:35:11
+711;89;LB_HAB_EN;VARCHAR2;"Intitulé anglais de l&#39;unité typologique (repris tel que dans la publication d&#39;origine).";7;500;Nom anglais;2017-05-22 00:00:00;2023-04-04 12:35:11
+712;89;LB_AUTEUR;VARCHAR2;"Auteurs. Champ présent pour un soucis d&#39;homogénéité des tables mais non rempli.";8;255;Auteurs;2017-05-22 00:00:00;2023-04-04 12:35:11
+713;89;NIVEAU;NUMBER;"Niveau de l&#39;habitat correspondant à son nombre de chiffres, de 1 à 7 (le . marquant la décimale n&#39;est pas pris en compte).";9;8;Niveau;2017-05-22 00:00:00;2023-04-04 12:35:11
+714;89;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;100;Intitulé du niveau;2017-05-22 00:00:00;2023-04-04 12:35:11
+715;89;CD_HAB_SUP;NUMBER;"Code HabRef de l&#39;habitat parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;8;Identifiant HabRef du parent;2017-05-22 00:00:00;2023-04-04 12:35:11
+716;89;PATH_CD_HAB;VARCHAR2;"Chemin de l&#39;arborescence pour atteindre ce code.";12;4000;Arborescence;2017-05-22 00:00:00;2023-04-04 12:35:11
+300;28;LB_CODE;NUMBER;"Numéro de la classe ou de la fiche de synthèse présentant l&#39;association (uniquement pour les associations ""retenues"" et présentes ou à rechercher en France).";4;22;Code;2014-06-19 00:00:00;2023-04-04 12:35:11
+718;89;LB_DESCRIPTION;VARCHAR2;Description des postes typologiques.;14;4000;Description des postes typologiques;2017-05-22 00:00:00;2023-04-04 12:35:11
+754;90;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;;Intitulé du niveau;2017-05-22 18:32:06;2023-04-04 12:35:11
+755;90;NIVEAU;NUMBER;"Niveau de l&#39;habitat.";9;;Niveau;2017-05-22 18:32:35;2023-04-04 12:35:11
+756;90;PATH_CD_HAB;VARCHAR2;"Chemin de l&#39;arborescence pour atteindre ce code. Champ présent pour un soucis d&#39;homogénéité des tables mais non rempli.";12;;Arborescence;2017-05-22 18:33:19;2023-04-04 12:35:11
+784;91;CD_HAB;NUMBER;Identifiant unique du syntaxon. Non supprimable et non réutilisable.;1;8;Identifiant HabRef de l'unité;2019-03-18 00:00:00;2023-04-04 12:35:11
+785;91;FG_VALIDITE;VARCHAR2;Validité du nom du syntaxon (nom de référence / synonyme).;2;20;Validité;2019-03-18 00:00:00;2023-04-04 12:35:11
+786;91;CD_TYPO;NUMBER;Identifiant HabRef de la typologie.;3;8;Identifiant HabRef de la typologie;2019-03-18 00:00:00;2023-04-04 12:35:11
+787;91;LB_CODE;VARCHAR2;Code du syntaxon.;4;50;Code du syntaxon;2019-03-18 00:00:00;2023-04-04 12:35:11
+788;91;LB_HAB_FR;VARCHAR2;Nom latin du syntaxon.;5;500;Nom latin;2019-03-18 00:00:00;2023-04-04 12:35:11
+789;91;LB_HAB_FR_COMPLET;VARCHAR2;Nom complet du syntaxon, résultant de la concaténation du nom latin et des auteurs.;6;500;Nom complet;2019-03-18 00:00:00;2023-04-04 12:35:11
+791;91;LB_AUTEUR;VARCHAR2;Auteurs du syntaxon.;8;255;Auteurs du syntaxon;2019-03-18 00:00:00;2023-04-04 12:35:11
+792;91;NIVEAU;NUMBER;Niveau du syntaxon dans la classification phytosociologique, codé de 1 à 7.;9;8;Niveau;2019-03-18 00:00:00;2023-04-04 12:35:11
+793;91;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;100;Intitulé du niveau;2019-03-18 00:00:00;2023-04-04 12:35:11
+794;91;CD_HAB_SUP;NUMBER;Identifiant HabRef du syntaxon parent.;11;8;Identifiant HabRef du parent;2019-03-18 00:00:00;2023-04-04 12:35:11
+795;91;PATH_CD_HAB;VARCHAR2;"Chemin de l&#39;arborescence pour atteindre ce code.";12;4000;Arborescence;2019-03-18 00:00:00;2023-04-04 12:35:11
+796;91;FRANCE;VARCHAR2;Présence du syntaxon en France.;13;5;Présence en France;2019-03-18 00:00:00;2023-04-04 12:35:11
+696;88;CODE_CB_ETEND_DOM;VARCHAR2;"Code CORINE-BIOTOPE étendu au DOM. Codification hiérarchique avec un chiffre (de 1 à 9) pour le domaine principal d&#39;habitats + un chiffre (de 1 à 9 ou, si plus, une lettre dans l&#39;ordre alphabétique) pour le sous-domaine majeur. Les unités typologiques inférieures sont chiffrées (de 1 à 9 ou, si plus, lettrées dans l&#39;ordre alphabétique). Les niveaux hiérarchiques sont présentés par bloc de deux avec un point séparateur entre blocs.";28;;Code CORINE Biotopes étendu DOM;2017-05-22 00:00:00;2023-04-04 12:35:11
+697;88;VEGETATION;VARCHAR2;Description des types de végétations qui caractérisent les postes typologiques associée à des informations phytosociologiques.;15;;Végétation;2017-05-22 00:00:00;2023-04-04 12:35:11
+699;88;CD_NATURALITE;VARCHAR2;"Le degré de naturalité précise le niveau de secondarisation de l&#39;habitat selon l&#39;échelle suivante très simplifiée : 1. habitat naturel à caractère primaire, non ou faiblement perturbé par les activités humaines, à composante exotique nulle à très réduite ; 2. habitat semi-naturel à caractère secondaire plus ou moins marqué, à composantes indigène et exotique mêlées ; 3. habitat artificialisé à caractère secondaire et souvent rudéral, à composante indigène nulle à très réduite.";20;;Code du degré de naturalité de l'habitat à Mayotte;2017-05-22 00:00:00;2023-04-04 12:35:11
+703;88;FLORE_DIAGNOSTIQUE;VARCHAR2;"Plantes diagnostiques de l&#39;habitat. Il s&#39;agit de plantes qui, isolément ou en combinaison avec les autres espèces citées, caractérisent l&#39;habitat.";16;;Flore diagnostique de l'unité typologique;2017-05-22 00:00:00;2023-04-04 12:35:11
+739;90;LB_HAB_FR;VARCHAR2;"Intitulé français de l&#39;habitat.";5;;Nom français;2017-05-22 18:05:55;2023-04-04 12:35:11
+740;90;CORRES_CARTO;VARCHAR2;Correspondance avec la codification utilisée pour désigner les postes typologiques dans la légende de la Carte écologique de la Guadeloupe (Rousteau, 1996).;26;;Correspondance Carte écologique de la Guadeloupe;2017-05-22 18:06:32;2023-04-04 12:35:11
+741;90;TERRITOIRE;VARCHAR2;Nom du territoire concerné par le poste typologique.;15;;Territoire;2017-05-22 00:00:00;2023-04-04 12:35:11
+742;90;ETAGE;VARCHAR2;"Nom de l&#39;étage de végétation concerné par le poste typologique.";16;;Etage;2017-05-22 00:00:00;2023-04-04 12:35:11
+778;88;LB_ENDEMICITE;VARCHAR2;"Type d&#39;endémicité de l&#39;habitat. L’échelle d’endémicité proposée concerne prioritairement l’endémicité stricte (Mayotte) et l’endémicité régionale (Comores). L’endémicité stricte pour Mayotte est codée « Ma ». L’endémicité régionale (présence au moins sur deux îles des Comores) est codée « C ». Une troisième échelle d&#39;endémicité a été ajoutée en complément des deux échelles précédentes. Elle concerne les taxons possédant une aire insulaire Ouest Océan Indien. Sa codification de base ""W"" est complétée par les combinaisons suivantes : - W2a : Comores et Madagascar ; - W2b : Comores et Seychelles. Dans quelques cas, en particulier pour des habitats insuffisamment étudiés, une endémicité potentielle ou douteuse est signalée par le symbole ""?"".";23;;Endémicité de l'habitat à Mayotte;2017-06-27 00:00:00;2023-04-04 12:35:11
+797;91;LB_DESCRIPTION;VARCHAR2;Description;14;4000;;2019-03-18 00:00:00;2023-04-04 12:35:11
+878;99;LB_HAB_FR_COMPLET;VARCHAR2;Nom et autorité du syntaxon.;6;500;Nom complet;2019-09-19 00:00:00;2023-04-04 12:35:11
+879;99;LB_HAB_EN;VARCHAR2;"Champ créé par souci d&#39;homogénéité avec les autres bases de données habitats, mais non renseigné.";7;500;Nom anglais;2019-09-19 00:00:00;2023-04-04 12:35:11
+750;90;DUREE_SAISON_SECHE;VARCHAR2;Durée de la saison sèche des stations où sont observés les postes typologiques.;21;;Durée de la saison sèche;2017-05-22 18:25:34;2023-04-04 12:35:11
+764;78;ORDRE_HABITAT;NUMBER;Clé de classement des postes typologiques.;21;;Ordre habitat;2017-06-01 00:00:00;2023-04-04 12:35:11
+765;78;DIAG_ECOLO;VARCHAR2;Diagnostic écologique des postes typologiques.;15;;Diagnostic écologique;2017-06-01 00:00:00;2023-04-04 12:35:11
+767;78;DIAG_FLORE;VARCHAR2;Flore diagnostique des postes typologiques.;17;;Diagnostic floristique;2017-06-01 00:00:00;2023-04-04 12:35:11
+768;78;FLORE_COMPAGNE;VARCHAR2;Flore compagne des postes typologiques.;18;;Flore compagne;2017-06-01 00:00:00;2023-04-04 12:35:11
+780;88;LB_NIVEAU_DETERM;VARCHAR2;"Ce champ s&#39;inscrit dans la phase de détermination patrimoniale (voir chapitre 5 [Boullet V., 2005b – Typologie des milieux naturels et des habitats terrestres et littoraux (supralittoral, médiolittoral pro parte) de Mayotte. In Rolland R. & Boullet V. (coords), 2005 – Mayotte Biodiversité et évaluation patrimoniale. Contribution à la mise en oeuvre de l&#39;inventaire ZNIEFF, pp 44‐67.]). Trois niveaux de priorité sont déterminants : Priorité 1  (habitats naturels ou quasi naturels qui sont : endémiques strics et exceptionnels à assez rares à Mayotte, ou endémiques régionaux et exceptionnels à très rares à Mayotte, ou présentant un taux de raréfaction supérieur ou égal à 50 %) ; priorité 2 (habitats naturels ou quasi naturels qui sont : endémiques stricts et assez communs à peu communs à Mayotte, ou endémiques régionaux et assez rares à rares à Mayotte, ou non endémiques ete très rares à exceptionnels à Mayotte, ou appartiennent aux catégories de menaces régionales UICN : EX, CR, EN et VU, ou les habitats semi-naturels exceptionnels et très rares à Mayotte ; priorité 3 (habitats naturels ou quasi naturels qui sont : endémiques strictes communs à très communs, endémiques régionaux assez peu communs à peu commun, non endémiques assez rares à rares, ou habitats semi-naturels qui sont endémiques strictes assez rares à rares, endémiques régionaux très rares à exceptionnels. Tous les autres habitats sont considérés comme non déterminants, cependant certains sont classés en priorité 4 s&#39;ils sont : des habitats naturels ou quasi naturels endémiques régionaux communs à très communs, ou non endémiques et assez communs à peu communs, ou des habitats semi-naturels endémiques stricts et peu communs à assez communs, ou endémiques régionaux et assez rares à rares, ou non endémiques et très rares à exceptionnels.";27;;Niveau de détermination patrimoniale de l'habitat;2017-06-27 00:00:00;2023-04-04 12:35:11
+800;92;FG_VALIDITE;VARCHAR2;;2;20;;2019-04-16 15:02:32;2023-04-04 12:35:12
+801;92;CD_TYPO;NUMBER;;3;8;;2019-04-16 15:02:33;2023-04-04 12:35:12
+802;92;LB_CODE;VARCHAR2;;4;50;;2019-04-16 15:02:33;2023-04-04 12:35:12
+803;92;LB_HAB_FR;VARCHAR2;"Intitulé de l&#39;habitat.";5;500;;2019-04-16 00:00:00;2023-04-04 12:35:12
+804;92;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2019-04-16 00:00:00;2023-04-04 12:35:12
+805;92;LB_HAB_EN;VARCHAR2;;7;500;;2019-04-16 00:00:00;2023-04-04 12:35:12
+806;92;LB_AUTEUR;VARCHAR2;;8;255;;2019-04-16 00:00:00;2023-04-04 12:35:12
+807;92;NIVEAU;NUMBER;;9;8;;2019-04-16 15:02:33;2023-04-04 12:35:12
+809;92;CD_HAB_SUP;NUMBER;;11;8;;2019-04-16 15:02:33;2023-04-04 12:35:12
+810;92;PATH_CD_HAB;VARCHAR2;;12;4000;;2019-04-16 15:02:33;2023-04-04 12:35:12
+811;92;FRANCE;VARCHAR2;;13;5;;2019-04-16 15:02:33;2023-04-04 12:35:12
+812;92;LB_DESCRIPTION;VARCHAR2;;14;4000;;2019-04-16 15:02:33;2023-04-04 12:35:12
+841;95;CD_HAB;NUMBER;;1;8;;2019-04-18 11:18:36;2023-04-04 12:35:11
+842;95;FG_VALIDITE;VARCHAR2;;2;20;;2019-04-18 11:18:37;2023-04-04 12:35:11
+843;95;CD_TYPO;NUMBER;;3;8;;2019-04-18 11:18:37;2023-04-04 12:35:11
+844;95;LB_CODE;VARCHAR2;;4;50;;2019-04-18 11:18:37;2023-04-04 12:35:11
+845;95;LB_HAB_FR;VARCHAR2;;5;500;;2019-04-18 11:18:37;2023-04-04 12:35:11
+846;95;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2019-04-18 11:18:37;2023-04-04 12:35:11
+847;95;LB_HAB_EN;VARCHAR2;;7;500;;2019-04-18 11:18:37;2023-04-04 12:35:11
+848;95;LB_AUTEUR;VARCHAR2;;8;255;;2019-04-18 11:18:37;2023-04-04 12:35:11
+849;95;NIVEAU;NUMBER;;9;8;;2019-04-18 11:18:37;2023-04-04 12:35:11
+850;95;LB_NIVEAU;VARCHAR2;;10;100;;2019-04-18 11:18:37;2023-04-04 12:35:11
+851;95;CD_HAB_SUP;NUMBER;;11;8;;2019-04-18 11:18:37;2023-04-04 12:35:11
+853;95;FRANCE;VARCHAR2;;13;5;;2019-04-18 11:18:37;2023-04-04 12:35:11
+854;95;LB_DESCRIPTION;VARCHAR2;;14;4000;;2019-04-18 11:18:37;2023-04-04 12:35:11
+873;99;CD_HAB;NUMBER;Identifiant unique du syntaxon. Non supprimable, et non réutilisable.;1;8;Identifiant HabRef de l'unité;2019-09-19 00:00:00;2023-04-04 12:35:11
+874;99;FG_VALIDITE;VARCHAR2;Validité du nom de syntaxon (nom de référence / synonyme).;2;20;Validité;2019-09-19 00:00:00;2023-04-04 12:35:11
+875;99;CD_TYPO;NUMBER;Identifiant de la typologie.;3;8;Identifiant HabRef de la typologie;2019-09-19 00:00:00;2023-04-04 12:35:11
+876;99;LB_CODE;VARCHAR2;Codification hiérarchique des syntaxons.;4;50;Code Typologie des syntaxons;2019-09-19 00:00:00;2023-04-04 12:35:11
+877;99;LB_HAB_FR;VARCHAR2;"Champ créé par souci d&#39;homogénéité avec les autres bases de données habitats, mais non renseigné.";5;500;Nom français;2019-09-19 00:00:00;2023-04-04 12:35:11
+880;99;LB_AUTEUR;VARCHAR2;"Auteur(s). Champ présent pour un soucis d&#39;homogénité des tables mais non rempli.";8;255;Auteur(s);2019-09-19 00:00:00;2023-04-04 12:35:11
+881;99;NIVEAU;NUMBER;Niveau du syntaxon.;9;8;Niveau;2019-09-19 00:00:00;2023-04-04 12:35:11
+882;99;LB_NIVEAU;VARCHAR2;Intitulé du niveau.;10;100;Intitulé du niveau;2019-09-19 00:00:00;2023-04-04 12:35:11
+883;99;CD_HAB_SUP;NUMBER;"Code HabRef du syntaxon parent (niveau n+1) du code HabRef présent dans le champ ""CD_HAB"".";11;8;Identifiant HabRef du parent;2019-09-19 00:00:00;2023-04-04 12:35:11
+884;99;PATH_CD_HAB;VARCHAR2;"Chemin de l&#39;arborescence pour atteindre ce code.";12;4000;Arborescence;2019-09-19 00:00:00;2023-04-04 12:35:11
+885;99;FRANCE;VARCHAR2;Présence en FRANCE (Metropole + DOM TOM + COM).;13;5;Présence en France;2019-09-19 00:00:00;2023-04-04 12:35:11
+886;99;LB_DESCRIPTION;VARCHAR2;Description des postes typologiques.;14;4000;Description des postes typologiques;2019-09-19 00:00:00;2023-04-04 12:35:11
+888;97;FG_VALIDITE;VARCHAR2;"Validité du nom de l&#39;habitat (nom de référence / synonyme).";2;20;Validité;2019-09-19 00:00:00;2023-04-04 12:35:11
+890;97;LB_CODE;VARCHAR2;"Codification hiérarchique de l&#39;unité typologique.";4;50;Code Typologie des habitats;2019-09-19 00:00:00;2023-04-04 12:35:11
+891;97;LB_HAB_FR;VARCHAR2;"Intitulé de l&#39;habitat.";5;500;Nom français;2019-09-19 00:00:00;2023-04-04 12:35:11
+894;97;LB_AUTEUR;VARCHAR2;"Auteur(s). Champ présent pour un soucis d&#39;homogénité des tables mais non rempli.";8;255;Auteur(s);2019-09-19 00:00:00;2023-04-04 12:35:11
+898;97;PATH_CD_HAB;VARCHAR2;"Chemin de l&#39;arborescence pour atteindre ce code.";12;4000;Arborescence;2019-09-19 00:00:00;2023-04-04 12:35:11
+1133;108;HYDRODYNAMISME;VARCHAR2;Hydrodynamisme (très faible, faible, modéré, fort, très fort);18;;Hydrodynamisme;2022-07-18 10:17:03;2023-04-04 12:35:11
+1134;108;GEOMORPHOLOGIE;VARCHAR2;Géomorphologie;19;;Géomorphologie;2022-07-18 10:18:03;2023-04-04 12:35:11
+1303;4;ATTENTION;VARCHAR2;"Notification particulière sur l&#39;unité d&#39;habitat";15;;Attention;2023-02-13 00:00:00;2023-04-04 12:35:12
+1349;124;CD_HAB;NUMBER;;1;8;;2023-02-17 18:57:07;2023-03-20 11:56:51
+1350;124;FG_VALIDITE;VARCHAR2;;2;20;;2023-02-17 18:57:07;2023-03-20 11:56:51
+1351;124;CD_TYPO;NUMBER;;3;8;;2023-02-17 18:57:07;2023-03-20 11:56:51
+1352;124;LB_CODE;VARCHAR2;;4;50;;2023-02-17 18:57:07;2023-03-20 11:56:52
+1353;124;LB_HAB_FR;VARCHAR2;;5;500;;2023-02-17 18:57:07;2023-03-20 11:56:52
+1354;124;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2023-02-17 18:57:07;2023-03-20 11:56:52
+1355;124;LB_HAB_EN;VARCHAR2;;7;500;;2023-02-17 18:57:07;2023-03-20 11:56:52
+1356;124;LB_AUTEUR;VARCHAR2;;8;255;;2023-02-17 18:57:07;2023-03-20 11:56:51
+1357;124;NIVEAU;NUMBER;;9;8;;2023-02-17 18:57:07;2023-03-20 11:56:52
+1358;124;LB_NIVEAU;VARCHAR2;;10;100;;2023-02-17 18:57:07;2023-03-20 11:56:52
+1359;124;CD_HAB_SUP;NUMBER;;11;8;;2023-02-17 18:57:07;2023-03-20 11:56:51
+1360;124;PATH_CD_HAB;VARCHAR2;;12;4000;;2023-02-17 18:57:07;2023-03-20 11:56:52
+1361;124;FRANCE;VARCHAR2;;13;5;;2023-02-17 18:57:07;2023-03-20 11:56:51
+1362;124;LB_DESCRIPTION;VARCHAR2;;14;4000;;2023-02-17 18:57:07;2023-03-20 11:56:52
+1138;108;GRANDEUR;VARCHAR2;"Intervalle de grandeur approximatif de l&#39;habitat";23;;Ordre de grandeur;2022-07-18 10:27:54;2023-04-04 12:35:11
+1139;108;STRUCTURATION;VARCHAR2;"Structuration 3D (""Habitabilité"") : Aspect de la surface / fréquence des anfractuosités / niveau de complexité du paysage ";24;;"Structuration 3D (""Habitabilité"")";2022-07-18 10:31:48;2023-04-04 12:35:11
+1140;108;HAB_ASSO;VARCHAR2;Habitat(s) en contact;25;;Habitat en contact;2022-07-18 10:32:42;2023-04-04 12:35:11
+1141;108;GEOGRAPHIE;;"Secteurs définis dans la zone des 0 à 50 m en fonction de l&#39;hydrodynamisme et de la nature du fond dominante (volcanique, biogène) : Caraïbe nord, Baie de Fort-de-France, Caraïbe sud, Méridional, Atlantique Sud, Septentrional.";26;;Secteurs;2022-07-18 10:34:49;2023-04-04 12:35:11
+1232;117;CD_TYPO;NUMBER;;3;8;;2022-10-27 15:56:36;2023-03-20 11:56:51
+1230;117;CD_HAB;NUMBER;;1;8;;2022-10-27 15:56:36;2023-03-20 11:56:51
+1231;117;FG_VALIDITE;VARCHAR2;;2;20;;2022-10-27 15:56:36;2023-03-20 11:56:51
+1233;117;LB_CODE;VARCHAR2;;4;50;;2022-10-27 15:56:36;2023-03-20 11:56:52
+1234;117;LB_HAB_FR;VARCHAR2;;5;500;;2022-10-27 15:56:37;2023-03-20 11:56:52
+1235;117;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2022-10-27 15:56:37;2023-03-20 11:56:52
+1236;117;LB_HAB_EN;VARCHAR2;;7;500;;2022-10-27 15:56:37;2023-03-20 11:56:52
+1237;117;LB_AUTEUR;VARCHAR2;;8;255;;2022-10-27 15:56:37;2023-03-20 11:56:51
+1238;117;NIVEAU;NUMBER;;9;8;;2022-10-27 15:56:37;2023-03-20 11:56:52
+1239;117;LB_NIVEAU;VARCHAR2;;10;100;;2022-10-27 15:56:37;2023-03-20 11:56:52
+1240;117;CD_HAB_SUP;NUMBER;;11;8;;2022-10-27 15:56:37;2023-03-20 11:56:51
+1241;117;PATH_CD_HAB;VARCHAR2;;12;4000;;2022-10-27 15:56:37;2023-03-20 11:56:52
+1242;117;FRANCE;VARCHAR2;;13;5;;2022-10-27 15:56:37;2023-03-20 11:56:51
+1243;117;LB_DESCRIPTION;VARCHAR2;;14;4000;;2022-10-27 15:56:37;2023-03-20 11:56:52
+1306;121;CD_HAB;NUMBER;;1;8;;2023-02-13 14:29:16;2023-03-20 11:56:51
+1307;121;FG_VALIDITE;VARCHAR2;;2;20;;2023-02-13 14:29:16;2023-03-20 11:56:51
+1308;121;CD_TYPO;NUMBER;;3;8;;2023-02-13 14:29:16;2023-03-20 11:56:51
+1309;121;LB_CODE;VARCHAR2;;4;50;;2023-02-13 14:29:16;2023-03-20 11:56:52
+1310;121;LB_HAB_FR;VARCHAR2;;5;500;;2023-02-13 14:29:16;2023-03-20 11:56:52
+1311;121;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2023-02-13 14:29:16;2023-03-20 11:56:52
+1312;121;LB_HAB_EN;VARCHAR2;;7;500;;2023-02-13 14:29:16;2023-03-20 11:56:52
+1313;121;LB_AUTEUR;VARCHAR2;;8;255;;2023-02-13 14:29:16;2023-03-20 11:56:51
+1314;121;NIVEAU;NUMBER;;9;8;;2023-02-13 14:29:16;2023-03-20 11:56:52
+1315;121;LB_NIVEAU;VARCHAR2;;10;100;;2023-02-13 14:29:16;2023-03-20 11:56:52
+1316;121;CD_HAB_SUP;NUMBER;;11;8;;2023-02-13 14:29:16;2023-03-20 11:56:51
+1317;121;PATH_CD_HAB;VARCHAR2;;12;4000;;2023-02-13 14:29:16;2023-03-20 11:56:52
+1318;121;FRANCE;VARCHAR2;;13;5;;2023-02-13 14:29:16;2023-03-20 11:56:51
+1319;121;LB_DESCRIPTION;VARCHAR2;;14;4000;;2023-02-13 14:29:16;2023-03-20 11:56:52
+1150;107;ESPECES_DIAGN;VARCHAR2;"Espèces diagnostiques de l&#39;habitat au niveau européen. Les espèces diagnostiques sont des espèces dont les occurrences sont concentrées dans l&#39;habitat et qui sont absentes ou rares dans d&#39;autres habitats. En tant que telles, elles sont de bons indicateurs positifs de l&#39;habitat, mais elles n&#39;ont pas besoin d&#39;être présentes dans toutes les localités où se trouve l&#39;habitat. Ce champ n&#39;est renseigné que pour les habitats de niveau 3.";16;;Espèces diagnostiques;2022-10-25 00:00:00;2023-04-04 12:35:12
+1151;107;ESPECES_CONST;VARCHAR2;"Espèces constantes de l&#39;habitat au niveau européen. Les espèces constantes sont des espèces qui sont fréquemment présentes dans l&#39;habitat, mais elles peuvent inclure des espèces généralistes qui sont également fréquentes dans d&#39;autres habitats. Les espèces constantes ont été définies comme celles dont la constance dans le type d&#39;habitat ciblé est d&#39;au moins 10 %. Ce champ n&#39;est renseigné que pour les habitats de niveau 3.";18;;Espèces constantes;2022-10-25 00:00:00;2023-04-04 12:35:12
+1152;107;ESPECES_DOMIN;VARCHAR2;"Espèces dominantes de l&#39;habitat au niveau européen. Les espèces dominantes sont celles qui atteignent souvent un recouvrement élevé dans l&#39;habitat, déterminant ainsi sa physionomie. Les espèces dominantes ont été définies comme celles présentes avec un recouvrement supérieur à 25 % dans au moins 5 % des relevés de végétation classés dans le type d&#39;habitat ciblé. Ce champ n&#39;est renseigné que pour les habitats de niveau 3.";19;;Espèces dominantes;2022-10-25 00:00:00;2023-04-04 12:35:12
+1061;107;FRANCE;VARCHAR2;"Présence en France de l&#39;habitat. TRUE = présence, FALSE = absence, ? = présence en France à confirmer.";13;5;Présence en France;2022-03-08 00:00:00;2023-04-04 12:35:12
+1057;107;NIVEAU;NUMBER;"Niveau du code EUNIS correspondant à son nombre de chiffres/lettres, de 1 à 8 (le ""-"" marquant la décimale n&#39;est pas pris en compte).";9;8;Niveau;2022-03-08 00:00:00;2023-04-04 12:35:12
+1053;107;LB_HAB_FR;VARCHAR2;"Intitulé en français de l&#39;habitat EUNIS (traduction non officielle).";5;500;Nom français de l'habitat;2022-03-08 00:00:00;2023-04-04 12:35:12
+1131;108;SUBSTRAT;VARCHAR2;"Substrat(s) dominant(s) l&#39;habitat";16;;Substrat;2022-07-18 10:12:21;2023-04-04 12:35:11
+1136;108;ESP_ASSO;VARCHAR2;Espèces les plus communes pouvant être trouvées dans l’habitat sans que leur présence soit nécessaire à son identification.;21;;Espèces associées;2022-07-18 10:23:04;2023-04-04 12:35:11
+1218;116;CD_TYPO;NUMBER;;3;8;;2022-10-27 15:55:09;2023-03-20 11:56:51
+1216;116;CD_HAB;NUMBER;;1;8;;2022-10-27 15:55:09;2023-03-20 11:56:51
+1217;116;FG_VALIDITE;VARCHAR2;;2;20;;2022-10-27 15:55:09;2023-03-20 11:56:51
+1219;116;LB_CODE;VARCHAR2;;4;50;;2022-10-27 15:55:09;2023-03-20 11:56:52
+1220;116;LB_HAB_FR;VARCHAR2;;5;500;;2022-10-27 15:55:09;2023-03-20 11:56:52
+1221;116;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2022-10-27 15:55:09;2023-03-20 11:56:52
+1222;116;LB_HAB_EN;VARCHAR2;;7;500;;2022-10-27 15:55:09;2023-03-20 11:56:52
+1223;116;LB_AUTEUR;VARCHAR2;;8;255;;2022-10-27 15:55:09;2023-03-20 11:56:51
+1224;116;NIVEAU;NUMBER;;9;8;;2022-10-27 15:55:09;2023-03-20 11:56:52
+1225;116;LB_NIVEAU;VARCHAR2;;10;100;;2022-10-27 15:55:09;2023-03-20 11:56:52
+1226;116;CD_HAB_SUP;NUMBER;;11;8;;2022-10-27 15:55:10;2023-03-20 11:56:51
+1227;116;PATH_CD_HAB;VARCHAR2;;12;4000;;2022-10-27 15:55:10;2023-03-20 11:56:52
+1228;116;FRANCE;VARCHAR2;;13;5;;2022-10-27 15:55:10;2023-03-20 11:56:51
+1229;116;LB_DESCRIPTION;VARCHAR2;;14;4000;;2022-10-27 15:55:10;2023-03-20 11:56:52
+1244;118;CD_HAB;NUMBER;;1;8;;2022-11-15 15:15:52;2023-03-20 11:56:51
+1245;118;FG_VALIDITE;VARCHAR2;;2;20;;2022-11-15 15:15:52;2023-03-20 11:56:51
+1246;118;CD_TYPO;NUMBER;;3;8;;2022-11-15 15:15:52;2023-03-20 11:56:51
+1247;118;LB_CODE;VARCHAR2;;4;50;;2022-11-15 15:15:52;2023-03-20 11:56:52
+1248;118;LB_HAB_FR;VARCHAR2;;5;500;;2022-11-15 15:15:52;2023-03-20 11:56:52
+1249;118;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2022-11-15 15:15:52;2023-03-20 11:56:52
+1250;118;LB_HAB_EN;VARCHAR2;;7;500;;2022-11-15 15:15:52;2023-03-20 11:56:52
+1251;118;LB_AUTEUR;VARCHAR2;;8;255;;2022-11-15 15:15:52;2023-03-20 11:56:51
+1252;118;NIVEAU;NUMBER;;9;8;;2022-11-15 15:15:52;2023-03-20 11:56:52
+1253;118;LB_NIVEAU;VARCHAR2;;10;100;;2022-11-15 15:15:52;2023-03-20 11:56:52
+1254;118;CD_HAB_SUP;NUMBER;;11;8;;2022-11-15 15:15:52;2023-03-20 11:56:51
+1255;118;PATH_CD_HAB;VARCHAR2;;12;4000;;2022-11-15 15:15:52;2023-03-20 11:56:52
+1256;118;FRANCE;VARCHAR2;;13;5;;2022-11-15 15:15:52;2023-03-20 11:56:51
+1257;118;LB_DESCRIPTION;VARCHAR2;;14;4000;;2022-11-15 15:15:52;2023-03-20 11:56:52
+1272;107;LB_DESCRIPTION_SUITE;VARCHAR2;"Complément au champ de description de l&#39;habitat.";15;;Descriptif de l'habitat (suite);2022-11-15 00:00:00;2023-04-04 12:35:12
+1142;108;CONFUSIONS;VARCHAR2;"Confusions possibles avec d&#39;autres habitats de la typologie";27;;Confusions possibles;2022-07-18 10:39:26;2023-04-04 12:35:11
+1143;108;REMARQUES;VARCHAR2;Remarques;28;;Remarques;2022-07-18 10:40:37;2023-04-04 12:35:11
+1273;107;LB_DESCRIPTION_FR;VARCHAR2;"Descriptif de l&#39;habitat traduit en français (traduction non officielle).";17;;Descriptif de l'habitat en français;2022-11-15 00:00:00;2023-04-04 12:35:12
+1320;122;CD_HAB;NUMBER;;1;8;;2023-02-13 14:32:29;2023-03-20 11:56:51
+1321;122;FG_VALIDITE;VARCHAR2;;2;20;;2023-02-13 14:32:29;2023-03-20 11:56:51
+1322;122;CD_TYPO;NUMBER;;3;8;;2023-02-13 14:32:29;2023-03-20 11:56:51
+1323;122;LB_CODE;VARCHAR2;;4;50;;2023-02-13 14:32:29;2023-03-20 11:56:52
+1324;122;LB_HAB_FR;VARCHAR2;;5;500;;2023-02-13 14:32:29;2023-03-20 11:56:52
+1325;122;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2023-02-13 14:32:29;2023-03-20 11:56:52
+1326;122;LB_HAB_EN;VARCHAR2;;7;500;;2023-02-13 14:32:29;2023-03-20 11:56:52
+1327;122;LB_AUTEUR;VARCHAR2;;8;255;;2023-02-13 14:32:29;2023-03-20 11:56:51
+1328;122;NIVEAU;NUMBER;;9;8;;2023-02-13 14:32:29;2023-03-20 11:56:52
+1329;122;LB_NIVEAU;VARCHAR2;;10;100;;2023-02-13 14:32:29;2023-03-20 11:56:52
+1330;122;CD_HAB_SUP;NUMBER;;11;8;;2023-02-13 14:32:29;2023-03-20 11:56:51
+1331;122;PATH_CD_HAB;VARCHAR2;;12;4000;;2023-02-13 14:32:29;2023-03-20 11:56:52
+1332;122;FRANCE;VARCHAR2;;13;5;;2023-02-13 14:32:29;2023-03-20 11:56:51
+1333;122;LB_DESCRIPTION;VARCHAR2;;14;4000;;2023-02-13 14:32:29;2023-03-20 11:56:52
+1335;123;CD_HAB;NUMBER;;1;8;;2023-02-17 18:54:26;2023-03-20 11:56:51
+1336;123;FG_VALIDITE;VARCHAR2;;2;20;;2023-02-17 18:54:26;2023-03-20 11:56:51
+1337;123;CD_TYPO;NUMBER;;3;8;;2023-02-17 18:54:26;2023-03-20 11:56:51
+1338;123;LB_CODE;VARCHAR2;;4;50;;2023-02-17 18:54:26;2023-03-20 11:56:52
+1339;123;LB_HAB_FR;VARCHAR2;;5;500;;2023-02-17 18:54:26;2023-03-20 11:56:52
+1340;123;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2023-02-17 18:54:26;2023-03-20 11:56:52
+1341;123;LB_HAB_EN;VARCHAR2;;7;500;;2023-02-17 18:54:26;2023-03-20 11:56:52
+1342;123;LB_AUTEUR;VARCHAR2;;8;255;;2023-02-17 18:54:26;2023-03-20 11:56:51
+1343;123;NIVEAU;NUMBER;;9;8;;2023-02-17 18:54:26;2023-03-20 11:56:52
+1344;123;LB_NIVEAU;VARCHAR2;;10;100;;2023-02-17 18:54:26;2023-03-20 11:56:52
+1345;123;CD_HAB_SUP;NUMBER;;11;8;;2023-02-17 18:54:26;2023-03-20 11:56:51
+1346;123;PATH_CD_HAB;VARCHAR2;;12;4000;;2023-02-17 18:54:26;2023-03-20 11:56:52
+1347;123;FRANCE;VARCHAR2;;13;5;;2023-02-17 18:54:26;2023-03-20 11:56:51
+1348;123;LB_DESCRIPTION;VARCHAR2;;14;4000;;2023-02-17 18:54:26;2023-03-20 11:56:52
+1135;108;ESP_STRUCT;VARCHAR2;Espèces ingénieures (e.g. magnoliophytes marines, coraux), espèces visuellement dominantes (éponges, gorgones) ou espèces pouvant être considérées comme biotope (e.g. turf algal, corallinales encroûtantes).;20;;Espèces structurantes;2022-07-18 10:20:21;2023-04-04 12:35:11
+1174;113;CD_HAB;NUMBER;;1;8;;2022-10-27 15:41:10;2023-03-20 11:56:51
+1175;113;FG_VALIDITE;VARCHAR2;;2;20;;2022-10-27 15:41:10;2023-03-20 11:56:51
+1176;113;CD_TYPO;NUMBER;;3;8;;2022-10-27 15:41:10;2023-03-20 11:56:51
+1177;113;LB_CODE;VARCHAR2;;4;50;;2022-10-27 15:41:10;2023-03-20 11:56:52
+1178;113;LB_HAB_FR;VARCHAR2;;5;500;;2022-10-27 15:41:10;2023-03-20 11:56:52
+1179;113;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2022-10-27 15:41:10;2023-03-20 11:56:52
+1180;113;LB_HAB_EN;VARCHAR2;;7;500;;2022-10-27 15:41:10;2023-03-20 11:56:52
+1181;113;LB_AUTEUR;VARCHAR2;;8;255;;2022-10-27 15:41:10;2023-03-20 11:56:51
+1182;113;NIVEAU;NUMBER;;9;8;;2022-10-27 15:41:10;2023-03-20 11:56:52
+1183;113;LB_NIVEAU;VARCHAR2;;10;100;;2022-10-27 15:41:10;2023-03-20 11:56:52
+1184;113;CD_HAB_SUP;NUMBER;;11;8;;2022-10-27 15:41:10;2023-03-20 11:56:51
+1185;113;PATH_CD_HAB;VARCHAR2;;12;4000;;2022-10-27 15:41:10;2023-03-20 11:56:52
+1186;113;FRANCE;VARCHAR2;;13;5;;2022-10-27 15:41:10;2023-03-20 11:56:51
+1187;113;LB_DESCRIPTION;VARCHAR2;;14;4000;;2022-10-27 15:41:10;2023-03-20 11:56:52
+1188;114;CD_HAB;NUMBER;;1;8;;2022-10-27 15:43:36;2023-03-20 11:56:51
+1189;114;FG_VALIDITE;VARCHAR2;;2;20;;2022-10-27 15:43:36;2023-03-20 11:56:51
+1190;114;CD_TYPO;NUMBER;;3;8;;2022-10-27 15:43:36;2023-03-20 11:56:51
+1191;114;LB_CODE;VARCHAR2;;4;50;;2022-10-27 15:43:36;2023-03-20 11:56:52
+1192;114;LB_HAB_FR;VARCHAR2;;5;500;;2022-10-27 15:43:36;2023-03-20 11:56:52
+1193;114;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2022-10-27 15:43:36;2023-03-20 11:56:52
+1194;114;LB_HAB_EN;VARCHAR2;;7;500;;2022-10-27 15:43:36;2023-03-20 11:56:52
+1195;114;LB_AUTEUR;VARCHAR2;;8;255;;2022-10-27 15:43:36;2023-03-20 11:56:51
+1196;114;NIVEAU;NUMBER;;9;8;;2022-10-27 15:43:36;2023-03-20 11:56:52
+1197;114;LB_NIVEAU;VARCHAR2;;10;100;;2022-10-27 15:43:37;2023-03-20 11:56:52
+1198;114;CD_HAB_SUP;NUMBER;;11;8;;2022-10-27 15:43:37;2023-03-20 11:56:51
+1199;114;PATH_CD_HAB;VARCHAR2;;12;4000;;2022-10-27 15:43:37;2023-03-20 11:56:52
+1200;114;FRANCE;VARCHAR2;;13;5;;2022-10-27 15:43:37;2023-03-20 11:56:51
+1201;114;LB_DESCRIPTION;VARCHAR2;;14;4000;;2022-10-27 15:43:37;2023-03-20 11:56:52
+935;100;LB_HAB_FR;VARCHAR2;"Nom latin du syntaxon ou nom français de l&#39;unité.";5;500;Nom latin / français;2020-02-28 00:00:00;2023-04-04 12:35:11
+1132;108;PROFONDEUR;VARCHAR2;Intervalle approximatif de profondeur dans lequel l’habitat peut être observé;17;;Profondeur;2022-07-18 10:13:55;2023-04-04 12:35:11
+1137;108;DESCRIPTION;VARCHAR2;"Description de l&#39;habitat";22;;Description;2022-07-18 00:00:00;2023-04-04 12:35:11
+1260;119;CD_TYPO;NUMBER;;3;8;;2022-11-15 16:51:28;2023-03-20 11:56:51
+1160;112;CD_HAB;NUMBER;;1;8;;2022-10-27 15:34:56;2023-03-20 11:56:51
+1161;112;FG_VALIDITE;VARCHAR2;;2;20;;2022-10-27 15:34:56;2023-03-20 11:56:51
+1162;112;CD_TYPO;NUMBER;;3;8;;2022-10-27 15:34:56;2023-03-20 11:56:51
+1163;112;LB_CODE;VARCHAR2;;4;50;;2022-10-27 15:34:56;2023-03-20 11:56:52
+1164;112;LB_HAB_FR;VARCHAR2;;5;500;;2022-10-27 15:34:56;2023-03-20 11:56:52
+1165;112;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2022-10-27 15:34:56;2023-03-20 11:56:52
+1166;112;LB_HAB_EN;VARCHAR2;;7;500;;2022-10-27 15:34:56;2023-03-20 11:56:52
+1167;112;LB_AUTEUR;VARCHAR2;;8;255;;2022-10-27 15:34:56;2023-03-20 11:56:51
+1168;112;NIVEAU;NUMBER;;9;8;;2022-10-27 15:34:57;2023-03-20 11:56:52
+1169;112;LB_NIVEAU;VARCHAR2;;10;100;;2022-10-27 15:34:57;2023-03-20 11:56:52
+1170;112;CD_HAB_SUP;NUMBER;;11;8;;2022-10-27 15:34:57;2023-03-20 11:56:51
+1171;112;PATH_CD_HAB;VARCHAR2;;12;4000;;2022-10-27 15:34:57;2023-03-20 11:56:52
+1172;112;FRANCE;VARCHAR2;;13;5;;2022-10-27 15:34:57;2023-03-20 11:56:51
+1173;112;LB_DESCRIPTION;VARCHAR2;;14;4000;;2022-10-27 15:34:57;2023-03-20 11:56:52
+1202;115;CD_HAB;NUMBER;;1;8;;2022-10-27 15:44:39;2023-03-20 11:56:51
+1203;115;FG_VALIDITE;VARCHAR2;;2;20;;2022-10-27 15:44:39;2023-03-20 11:56:51
+1204;115;CD_TYPO;NUMBER;;3;8;;2022-10-27 15:44:39;2023-03-20 11:56:51
+1205;115;LB_CODE;VARCHAR2;;4;50;;2022-10-27 15:44:39;2023-03-20 11:56:52
+1206;115;LB_HAB_FR;VARCHAR2;;5;500;;2022-10-27 15:44:39;2023-03-20 11:56:52
+1207;115;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2022-10-27 15:44:39;2023-03-20 11:56:52
+1208;115;LB_HAB_EN;VARCHAR2;;7;500;;2022-10-27 15:44:39;2023-03-20 11:56:52
+1209;115;LB_AUTEUR;VARCHAR2;;8;255;;2022-10-27 15:44:39;2023-03-20 11:56:51
+1210;115;NIVEAU;NUMBER;;9;8;;2022-10-27 15:44:39;2023-03-20 11:56:52
+1211;115;LB_NIVEAU;VARCHAR2;;10;100;;2022-10-27 15:44:39;2023-03-20 11:56:52
+1212;115;CD_HAB_SUP;NUMBER;;11;8;;2022-10-27 15:44:39;2023-03-20 11:56:51
+1213;115;PATH_CD_HAB;VARCHAR2;;12;4000;;2022-10-27 15:44:39;2023-03-20 11:56:52
+1214;115;FRANCE;VARCHAR2;;13;5;;2022-10-27 15:44:39;2023-03-20 11:56:51
+1215;115;LB_DESCRIPTION;VARCHAR2;;14;4000;;2022-10-27 15:44:39;2023-03-20 11:56:52
+1258;119;CD_HAB;NUMBER;;1;8;;2022-11-15 16:51:28;2023-03-20 11:56:51
+1259;119;FG_VALIDITE;VARCHAR2;;2;20;;2022-11-15 16:51:28;2023-03-20 11:56:51
+1261;119;LB_CODE;VARCHAR2;;4;50;;2022-11-15 16:51:28;2023-03-20 11:56:52
+1262;119;LB_HAB_FR;VARCHAR2;;5;500;;2022-11-15 16:51:28;2023-03-20 11:56:52
+1263;119;LB_HAB_FR_COMPLET;VARCHAR2;;6;500;;2022-11-15 16:51:28;2023-03-20 11:56:52
+1264;119;LB_HAB_EN;VARCHAR2;;7;500;;2022-11-15 16:51:28;2023-03-20 11:56:52
+1265;119;LB_AUTEUR;VARCHAR2;;8;255;;2022-11-15 16:51:28;2023-03-20 11:56:51
+1266;119;NIVEAU;NUMBER;;9;8;;2022-11-15 16:51:28;2023-03-20 11:56:52
+1267;119;LB_NIVEAU;VARCHAR2;;10;100;;2022-11-15 16:51:28;2023-03-20 11:56:52
+1268;119;CD_HAB_SUP;NUMBER;;11;8;;2022-11-15 16:51:28;2023-03-20 11:56:51
+1269;119;PATH_CD_HAB;VARCHAR2;;12;4000;;2022-11-15 16:51:28;2023-03-20 11:56:52
+1270;119;FRANCE;VARCHAR2;;13;5;;2022-11-15 16:51:28;2023-03-20 11:56:51
+1271;119;LB_DESCRIPTION;VARCHAR2;;14;4000;;2022-11-15 16:51:28;2023-03-20 11:56:52
