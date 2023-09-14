@@ -11,11 +11,12 @@ DATAPHYTO = read.csv(choose.files())
 
 #Decroiser le tableau
 MELT_DATA <- melt(DATAPHYTO, id.vars = c("CD_NOM","NOM_VALIDE","RELEVE"), measure.vars = c("ARBO", "ARBU", "HERB", "MUCINALE"))
-colnames(MELT_DATA) = c("CD_NOM","NOM_VALIDE","RELEVE","STRATE","value","pondvalue")
+
 # Attribution d'un poid pour chaque classe phyto
 library(tidyverse)
 MELT_DATA$pondvalue = str_replace_all(MELT_DATA$value,c("5"="10","4"="8","3"="6","2"="4","1"="1","\\+"="0.5","r"="0.25","i"="0.125"))
 MELT_DATA$pondvalue = as.numeric(MELT_DATA$pondvalue)
+colnames(MELT_DATA) = c("CD_NOM","NOM_VALIDE","RELEVE","STRATE","value","pondvalue")
 
 #Somme des scores par espèce
 AGG_DATA = aggregate(pondvalue~CD_NOM+NOM_VALIDE+RELEVE+STRATE+value,data=MELT_DATA,sum)
@@ -39,7 +40,7 @@ for(i in 1:nrow(DATARELEVE)){
   CATMINAT_SEP = separate(JOIN_DATA_CALL, code_CATMINAT, into = c("code1", "code2", "code3", "code4", "code5","code6","code7"), sep = "/|\\.")
   JOIN_DATA_CALL = left_join(CATMINAT_SEP,JOIN_DATA_CALL,by="CD_NOM",keep = FALSE)[,-c(13:16)]
   # On analyse les code CATMINAT dans l'ordre d'importance
-  for(j in 1:6){
+  for(j in 1:5){
     cat("___VERIFICATION CODE : ",j,"\n")
     col = paste0("code",j)
     if(all(is.na(JOIN_DATA_CALL[col]))){break}
@@ -68,7 +69,7 @@ for(i in 1:nrow(DATARELEVE)){
 
 # Une fois un code attribu? ? chaque relev?, on y joint les informations de baseveg
 
-baseflor <- read.csv("baseflor.csv",sep=";")
+baseflor <- read.csv("baseflor.csv",sep=";",fileEncoding = "latin1")
 DATARELEVE_JOIN = inner_join(DATARELEVE,baseflor,by=c("CATMINAT"="code_CATMINAT"))
 DATARELEVE_JOIN = aggregate(DATARELEVE_JOIN,list(DATARELEVE_JOIN$RELEVE),unique)
 
