@@ -41,10 +41,21 @@ for(i in 1:nrow(DATARELEVE)){
     }
 }
 
+
+# Fonction pour enlever ".0" à la fin des
+enlever_point_zero <- function(x) {
+  if (str_sub(x, nchar(x)-1, nchar(x)) == ".0") {
+    x <- str_sub(x, 1, nchar(x)-2)
+  }
+  return(x)
+}
+
+DATARELEVE$CATMINAT = sapply(DATARELEVE$CATMINAT, enlever_point_zero)
+
 # Une fois un code attribu? ? chaque relev?, on y joint les informations de baseveg
 
 baseflor <- read.csv("baseflor.csv",sep=";",fileEncoding = "latin1")
-DATARELEVE_JOIN = inner_join(DATARELEVE,baseflor,by=c("CATMINAT"="code_CATMINAT"))
+DATARELEVE_JOIN = left_join(DATARELEVE,baseflor,by=c("CATMINAT"="code_CATMINAT"))
 DATARELEVE_JOIN = aggregate(DATARELEVE_JOIN,list(DATARELEVE_JOIN$RELEVE,DATARELEVE_JOIN$STRATE),unique)
 
 # Ajout des nomenclature de phytosociologie a JOIN_DATA
@@ -61,8 +72,8 @@ DATARELEVE_JOIN = DATARELEVE_JOIN %>% select(RELEVE,STRATE,CATMINAT,CARACTERISAT
 # Enregistrement des résultats
 dir.create("OUTPUT")
 DATARELEVE_JOIN = DATARELEVE_JOIN %>% arrange(RELEVE,STRATE)
-write.csv(DATARELEVE_JOIN,"OUTPUT/BILAN_RELEVE.csv",fileEncoding = "UTF-8",row.names = F)
+write.csv(DATARELEVE_JOIN,"OUTPUT/BILAN_RELEVE_STRATE.csv",fileEncoding = "UTF-8",row.names = F)
 
 # Export de JOIN_DATA
 JOIN_DATA_EXP = JOIN_DATA_EXP %>% arrange(RELEVE ,STRATE,code_CATMINAT)
-write.csv(JOIN_DATA_EXP,"OUTPUT/BILAN_ESP.csv",fileEncoding = "UTF-8",row.names = F)
+write.csv(JOIN_DATA_EXP,"OUTPUT/BILAN_ESP_STRATE.csv",fileEncoding = "UTF-8",row.names = F)
