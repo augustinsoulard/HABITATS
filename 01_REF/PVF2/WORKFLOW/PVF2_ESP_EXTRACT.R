@@ -1,22 +1,29 @@
-setwd("C:/Users/Augustin Soulard/Documents/Programmation/Github/HABITATS/01_REF/PVF2/WORKFLOW")
+#Choisir l'environnement de tavail
+WD = dirname(rstudioapi::getActiveDocumentContext()$path)
+setwd(WD)
 
-# Chargement des données
+# Librairies
+if (!require("readxl")) {install.packages("readxl")}+library("readxl") # API GBIF
+if (!require("xlsx")) {install.packages("xlsx")}+library("xlsx")
+
+# Chargement des donnees
 
 #PVF2
-library(readxl)
+
 TYPO_PVF2_70 <- read_excel("../TYPO_PVF2_70.xlsx", sheet = "TYPO_PVF2_70")
 
 #TAXREFv16
-TAXREFv16_FLORE_FR = read.csv("../../../../BDD_FLORE_CONSTRUCT/TAXREF/TAXREFv16_FLORE_FR.csv",fileEncoding = "UTF-8")
+TAXREFv16_FLORE_FR = read.csv("TAXREFv16_FLORE_FR.csv",fileEncoding = "UTF-8")
 
 # On conserve que les RANG especes, sous especes et variete
 TAXREFv16_FLORE_FR = TAXREFv16_FLORE_FR[TAXREFv16_FLORE_FR$RANG %in% c("ES", "SSES", "VAR"),]
 
-# Amorcage du tableau à remplir
+# Amorcage du tableau ? remplir
 TAB_ESP_PVF2 = data.frame(CD_HAB = "X",LB_CODE= "X",LB_HAB_FR="X",CD_NOM="X",LB_NOM="X")
 TAB_ESP_PVF2 = TAB_ESP_PVF2[-1,]
 
-# Boucle de rattachement TAXREF - PVF2
+
+# Boucle de rattachement TAXREF - PVF2 avec affichage
 for(i in 1:nrow(TYPO_PVF2_70)){
   for( j in 1:nrow(TAXREFv16_FLORE_FR)){
     cat("PVF2 ligne : ",i," - TAXREF ligne : ",j,"\n")
@@ -29,4 +36,6 @@ for(i in 1:nrow(TYPO_PVF2_70)){
 }
 
 
- 
+
+# Enregistrement en XLSX
+write.xlsx(TAB_ESP_PVF2,"TAB_ESP_PVF2.xlsx")
