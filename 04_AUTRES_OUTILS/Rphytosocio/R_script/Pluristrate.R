@@ -61,7 +61,7 @@ DATARELEVE_JOIN = aggregate(DATARELEVE_JOIN,list(DATARELEVE_JOIN$RELEVE,DATARELE
 # Ajout des nomenclature de phytosociologie a JOIN_DATA
 JOIN_DATA$IDKEY = paste0(JOIN_DATA$STRATE,JOIN_DATA$CD_NOM,JOIN_DATA$RELEVE)
 JOIN_DATA_EXP = inner_join(JOIN_DATA,baseflor,by=c("code_CATMINAT"="code_CATMINAT"))
-JOIN_DATA_EXP = aggregate(JOIN_DATA_EXP,list(JOIN_DATA_EXP$IDKEY),unique)
+JOIN_DATA_EXP = JOIN_DATA_EXP[!duplicated(JOIN_DATA_EXP$IDKEY),]
 JOIN_DATA_EXP = select(JOIN_DATA_EXP,RELEVE,STRATE,CD_NOM,NOM_VALIDE,Nom.scientifique, value,pondvalue,code_CATMINAT,CARACTERISATION_ECOLOGIQUE_.HABITAT_OPTIMAL.,INDICATION_PHYTOSOCIOLOGIQUE_CARACTERISTIQUE)
 # On retire les synonymes
 # DATARELEVE_JOIN = DATARELEVE_JOIN[!DATARELEVE_JOIN$NIVEAU %in% c("syn =","syn = pp","syn compl inval pp","syn compl pp","syn pp"),]
@@ -72,8 +72,8 @@ DATARELEVE_JOIN = DATARELEVE_JOIN %>% select(RELEVE,STRATE,CATMINAT,CARACTERISAT
 # Enregistrement des résultats
 dir.create("OUTPUT")
 DATARELEVE_JOIN = DATARELEVE_JOIN %>% arrange(RELEVE,STRATE)
-write.csv(DATARELEVE_JOIN,"OUTPUT/BILAN_RELEVE_STRATE.csv",fileEncoding = "UTF-8",row.names = F)
+write.csv2(DATARELEVE_JOIN,"OUTPUT/BILAN_RELEVE_STRATE.csv",fileEncoding = "UTF-8",row.names = F)
 
 # Export de JOIN_DATA
 JOIN_DATA_EXP = JOIN_DATA_EXP %>% arrange(RELEVE ,STRATE,code_CATMINAT)
-write.csv(JOIN_DATA_EXP,"OUTPUT/BILAN_ESP_STRATE.csv",fileEncoding = "UTF-8",row.names = F)
+write.csv2(JOIN_DATA_EXP,"OUTPUT/BILAN_ESP_STRATE.csv",fileEncoding = "UTF-8",row.names = F)
