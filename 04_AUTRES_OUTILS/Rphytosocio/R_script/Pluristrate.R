@@ -12,9 +12,10 @@ for(i in 1:nrow(DATARELEVE)){
   JOIN_DATA_CALL = JOIN_DATA_CALL[JOIN_DATA_CALL$RELEVE == DATARELEVE$RELEVE[i] 
                                    & JOIN_DATA_CALL$STRATE == DATARELEVE$STRATE[i],]
   CATMINAT_SEP = separate(JOIN_DATA_CALL, code_CATMINAT, into = c("code1", "code2", "code3", "code4", "code5","code6","code7"), sep = "/|\\.")
-  JOIN_DATA_CALL = left_join(CATMINAT_SEP,JOIN_DATA_CALL,by="CD_NOM",keep = FALSE)[,-c(13:16)]
+  JOIN_DATA_CALL = left_join(CATMINAT_SEP,JOIN_DATA_CALL,by="CD_NOM",keep = FALSE)[,-c(14:16)]
+    
   # On analyse les code CATMINAT dans l'ordre d'importance
-    for(j in 1:5){
+    for(j in 1:6){
       cat("___VERIFICATION CODE : ",j,"\n")
       col = paste0("code",j)
       if(all(is.na(JOIN_DATA_CALL[col]))){break}
