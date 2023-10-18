@@ -14,7 +14,7 @@ if (!require("stringr")) {install.packages("stringr")}+library("stringr")
 
 #PVF2
 
-TYPO_PVF2_70 <- read_excel("../TYPO_PVF2_70.xlsx", sheet = "TYPO_PVF2_70")
+TYPO_PVF2_70 <- read_excel("../TYPO_PVF2_70_corrige.xlsx", sheet = "TYPO_PVF2_70")
 
 #TAXREFv16
 TAXREFv16_FLORE_FR = read.csv("TAXREFv16_FLORE_FR.csv",fileEncoding = "UTF-8")
