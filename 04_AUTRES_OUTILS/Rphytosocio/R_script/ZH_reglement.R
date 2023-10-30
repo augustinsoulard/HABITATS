@@ -36,15 +36,19 @@ DATA_RELEVE_ZH = data.frame(
 
 #Boucle principale d'analyse
 for(i in 1:nrow(DATA_RELEVE_ZH)){
-  cat("RELEVE : ",as.character(DATA_RELEVE_ZH$RELEVE[i]),"\n")
+  cat("RELEVE : ",as.character(DATA_RELEVE_ZH$RELEVE[i])," - ")
   DONNEE_REL_I = DATA_FLORE_ZH[DATA_FLORE_ZH$RELEVE == DATA_RELEVE_ZH$RELEVE[i],]
   # Surface >50%
-  DONNEE_REL_I %>% filter(!(CUMSUM > 50 & lag(CUMSUM) >50 & CD_SYNUSIE == lag(CD_SYNUSIE) & Surface < 20)) %>% filter(Surface>=5)
+  DONNEE_REL_I = DONNEE_REL_I %>% filter(!(CUMSUM > 50 & lag(CUMSUM) >50 & CD_SYNUSIE == lag(CD_SYNUSIE) & Surface < 20)) %>% filter(Surface>=5)
   if(nrow(DONNEE_REL_I[DONNEE_REL_I$Indicatrice.ZH=="Oui",]) >= nrow(DONNEE_REL_I)/2 ){
-    DATA_RELEVE_ZH$ZONE_HUMIDE = "Oui"
-  } else(DATA_RELEVE_ZH$ZONE_HUMIDE = "-")
-
+    DATA_RELEVE_ZH$ZONE_HUMIDE[i] = "Oui"
+  } else(DATA_RELEVE_ZH$ZONE_HUMIDE[i] = "-")
+ cat("Zone humide : ",DATA_RELEVE_ZH$ZONE_HUMIDE[i],"\n")
 }
+
+# Export du tableau final des relevés
+write.csv(DATA_RELEVE_ZH,"OUTPUT/DATA_RELEVE_ZH.csv",row.names = FALSE, fileEncoding = "UTF-8")
+
 
 
 # Export du tableau final d'espèce
