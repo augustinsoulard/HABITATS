@@ -6,6 +6,7 @@ setwd(WD)
 if(!require("foreign")){install.packages("foreign")} ; library("foreign")
 if(!require("reshape2")){install.packages("reshape2")} ; library("reshape2")
 if(!require("tidyverse")){install.packages("tidyverse")} ; library("tidyverse")
+if(!require("xlsx")){install.packages("xlsx")} ; library("xlsx")
 
 # Charger le fichier d'export des releves en recherchant un CSV
 # DATAPHYTO = read.csv(choose.files())
@@ -14,7 +15,10 @@ if(!require("tidyverse")){install.packages("tidyverse")} ; library("tidyverse")
 # Package d'ouverture d'un geopackage
 if(!require("sf")){install.packages("sf")} ; library("sf")
 
-# Ouverture des ficiers
+
+#Préparation de la zone d'export
+dir.create("OUTPUT")
+# Ouverture des fichiers
 TAXAQgis = read_sf("../DataProjetFlore.gpkg", layer = "TAXAQgis")
 FloreDocType = read.dbf("../FLore/FloreDocType.dbf")
 
@@ -31,9 +35,17 @@ if(any(is.na(DATAPHYTO$FAMILLE) == TRUE)){
 # syne pour les relevés synusiaux
 # zhum pour les relevés du protocole réglementaire zones humides
 
+
+
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 protocole = "zhum" # ATTENTION !!!!!!!!!!! VALEUR A ADAPTER
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
 
 if(protocole == "zhum"){
 
