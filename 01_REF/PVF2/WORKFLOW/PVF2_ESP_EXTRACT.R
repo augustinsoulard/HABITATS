@@ -49,3 +49,71 @@ write.xlsx(TAB_ESP_PVF2,"TAB_ESP_PVF2.xlsx")
 
 any(str_detect(TAXREFv16_FLORE_FR$LB_NOM, TYPO_PVF2_70$COMBINAISON_ESPECES[14]))
 
+
+
+##############TEST EXPRESSION REGULIERE
+
+
+# Fonction pour détecter et corriger les abréviations de genre
+
+phrase = "Nardus stricta, Achillea ptarmica subsp. pyrenaica, Agrostis rupestris subsp. rupestris, 
+Carex umbrosa subsp. huetiana, Epikeros pyrenaeus (= Selinum pyrenaeum), Euphrasia minima subsp. m., 
+Gentiana alpina, G. pyrenaica, Hieracium lactucella, Pedicularis pyrenaica, Ranunculus pyrenaeus, Trifolium alpinum, 
+Selaginella selaginoides"
+
+
+mots = strsplit(phrase, " |,|\n")[[1]]
+
+test_vide <- function(x) {
+  return(nchar(x) != 0)
+}
+
+mot_Genre = mots[str_detect(mots,"^[A-Z]")]
+
+
+#Liste de mot dans ma phrase
+mots = mots[unlist(lapply(mot, function(x) test_vide(x)))]
+
+grepl( mots[6])
+
+sub("^([A-Z]+)\\.$", "\\1", mots[6])
+
+gsub("^([A-Z]+)\\s+.*", "\\1", mots[6])
+
+# Fonction pour détecter et corriger les abréviations de genre dans une phrase
+detecter_et_corriger_abreviation_phrase <- function(phrase) {
+  mots <- strsplit(phrase, " ")[[1]]
+  genre_precedent <- NULL
+  
+  for (i in seq_along(mots)) {
+    mot <- mots[i]
+    
+    # Utilisation d'une expression régulière pour détecter les abréviations de genre
+    if (grepl("^\\w+\\.$", mot)) {
+      # Extraire l'abréviation de genre
+      abrev_genre <- gsub("^([A-Z]+)\\.$", "\\1", mot)
+      
+      # Corriger l'abréviation en utilisant le genre précédent
+      if (!is.null(genre_precedent)) {
+        mots[i] <- paste(genre_precedent, gsub("^[A-Z]+\\.$", "", mot), sep = " ")
+      }
+    } else {
+      # Mettre à jour le genre précédent si le mot n'est pas une abréviation
+      genre_precedent <- gsub("^([A-Z]+)\\s+.*", "\\1", mot)
+    }
+  }
+  
+  return(paste(mots, collapse = " "))
+}
+
+# Liste de phrases avec des noms d'espèces
+phrases <- c("Nardus stricta est une plante.", 
+             "Achillea ptarmica subsp. pyrenaica est une autre espèce.",
+             "Gentiana alpina, G. pyrenaica, et Hieracium lactucella sont des exemples.")
+
+# Appliquer la fonction sur la liste de phrases
+phrases_corrigees <- sapply(phrases, detecter_et_corriger_abreviation_phrase)
+
+# Afficher les résultats
+cat("Liste de phrases initiale:\n", paste(phrases, collapse = "\n"), "\n\n")
+cat("Liste de phrases corrigée:\n", paste(phrases_corrigees, collapse = "\n"))
