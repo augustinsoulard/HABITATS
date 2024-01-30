@@ -79,7 +79,7 @@ for(i in 1:nrow(TYPO_PVF2_70)){
   }
 }
 
-# Enregistrement en XLSX
+# Enregistrement en CSV
 write.csv(TAB_ESP_PVF2,"TAB_ESP_PVF2.csv",fileEncoding = "UTF-8",row.names = F)
 
 
