@@ -93,3 +93,17 @@ OCCSOL_COMPLET_2D  = st_zm(OCCSOL_COMPLET, drop = TRUE)
 
 # Ecriture de la couche finale
 st_write(OCCSOL_COMPLET_2D, "../../Occsol/OCCSOL_COMPLET3.shp")
+
+
+#############################################################
+#############################################################
+#Analyse de la ZEI
+#############################################################
+
+#Chargement de la ZEI
+ZEI <- st_read("../../Limites/ZE.shp")
+
+ZEI = st_cast(ZEI, "MULTIPOLYGON") # Passer en multipolygone
+
+# Effectuer l'intersection
+Habitats_ZEI <- st_intersection(OCCSOL_COMPLET_2D, ZEI)
