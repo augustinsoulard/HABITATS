@@ -1,0 +1,5 @@
+setwd("D:\Github\HABITATS\05_PHYTOSOCIOLOGIE\liste_perso")
+library(readxl)
+phytosociology <- read_excel("D:/Github/HABITATS/05_PHYTOSOCIOLOGIE/liste_perso/phytosociology.xlsx")
+chaine = paste(sort(phytosociology$toconcat),collapse="|")
+writeLines(chaine, "D:/Github/HABITATS/05_PHYTOSOCIOLOGIE/liste_perso/chaine.txt")
